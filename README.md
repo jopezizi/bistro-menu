@@ -2,7 +2,7 @@
 
 Kaksi staattista sivua GitHub Pagesilla:
 
-- **`index.html`** – lomake, johon liitetään raaka menuteksti. Lähetys POSTaa tekstin Make.com-webhookiin.
+- **`index.html`** – lomake, jossa on oma tekstikenttä jokaiselle kategorialle (Suolaista, Makeaa, Kuumat juomat, Kylmät juomat), esitäytettynä nykyisillä tuotteilla ja hinnoilla suoraa muokkausta varten. Lähetys yhdistää kentät raakatekstiksi ja POSTaa sen Make.com-webhookiin.
 - **`menu.html`** – näyttösivu, joka lukee jäsennellyn menun `data.json`-tiedostosta ja renderöi sen Elävä Bistron ulkoasulla (tausta `#D8E9A2`, otsikot Bricolage Grotesque, tuotenimet Manrope).
 - **`data.json`** – jäsennelty menu. Make.com-skenaario kirjoittaa tämän tiedoston yli aina kun uusi menu lähetetään lomakkeelta. Repossa on mukana esimerkkidata, jotta `menu.html` ei ole tyhjä ennen ensimmäistä lähetystä.
 
@@ -27,7 +27,7 @@ Olet ravintolan menun jäsentäjä. Saat raakaa, mahdollisesti epäsiistiä ja
 kirjoitusvirheitä sisältävää menutekstiä. Tehtäväsi:
 
 1. Jaa sisältö kategorioihin. Käytä vain näitä kategorianimiä, jos teksti
-   viittaa niihin: "Kuumat juomat", "Suolaista", "Makeaa", "Kylmät juomat".
+   viittaa niihin: "Suolaista", "Makeaa", "Kuumat juomat", "Kylmät juomat".
    Jos tekstissä on muita kategorioita, käytä niitä sellaisenaan.
 2. Tunnista jokaisesta kategoriasta tuotteet ja niiden hinnat.
 3. Korjaa ilmeiset kirjoitusvirheet tuotenimistä (esim. "kahvii" → "kahvi").

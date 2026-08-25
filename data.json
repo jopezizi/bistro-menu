@@ -3,37 +3,115 @@
   "updated": "2026-08-25",
   "categories": [
     {
-      "name": "Kuumat juomat",
-      "items": [
-        { "name": "Tavallinen kahvi", "badges": [], "price": "2,00€" },
-        { "name": "Erikoiskahvit", "badges": [], "price": "3,00€" },
-        { "name": "Tee", "badges": ["L", "G"], "price": "2,50€" },
-        { "name": "Kaakao", "badges": ["G"], "price": "3,00€" }
-      ]
-    },
-    {
       "name": "Suolaista",
       "items": [
-        { "name": "Kasvispiirakka", "badges": ["L"], "price": "5,50€" },
-        { "name": "Karjalanpiirakka, muna-voi", "badges": [], "price": "3,50€" },
-        { "name": "Lohikeitto", "badges": ["G"], "price": "9,90€" },
-        { "name": "Falafelwrap", "badges": ["L"], "price": "8,50€" }
+        {
+          "name": "Kasvispiirakka",
+          "badges": [
+            "L"
+          ],
+          "price": "5,50€"
+        },
+        {
+          "name": "Karjalanpiirakka, muna-voi",
+          "badges": [],
+          "price": "3,50€"
+        },
+        {
+          "name": "Lohikeitto",
+          "badges": [
+            "G"
+          ],
+          "price": "9,90€"
+        },
+        {
+          "name": "Falafelwrap",
+          "badges": [
+            "L"
+          ],
+          "price": "8,50€"
+        }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        { "name": "Korvapuusti", "badges": [], "price": "3,00€" },
-        { "name": "Porkkanakakku", "badges": ["G"], "price": "4,50€" },
-        { "name": "Suklaakeksi", "badges": ["L", "G"], "price": "2,00€" }
+        {
+          "name": "Korvapuusti",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Porkkanakakku",
+          "badges": [
+            "G"
+          ],
+          "price": "4,50€"
+        },
+        {
+          "name": "Suklaakeksi",
+          "badges": [
+            "L",
+            "G"
+          ],
+          "price": "2,00€"
+        }
+      ]
+    },
+    {
+      "name": "Kuumat juomat",
+      "items": [
+        {
+          "name": "Tavallinen kahvi",
+          "badges": [],
+          "price": "2,00€"
+        },
+        {
+          "name": "Erikoiskahvit",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Tee",
+          "badges": [
+            "L",
+            "G"
+          ],
+          "price": "2,50€"
+        },
+        {
+          "name": "Kaakao",
+          "badges": [
+            "G"
+          ],
+          "price": "3,00€"
+        }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        { "name": "Vesi", "badges": ["L", "G"], "price": "1,00€" },
-        { "name": "Tuoremehu", "badges": ["L", "G"], "price": "3,50€" },
-        { "name": "Kotikalja", "badges": [], "price": "2,50€" }
+        {
+          "name": "Vesi",
+          "badges": [
+            "L",
+            "G"
+          ],
+          "price": "1,00€"
+        },
+        {
+          "name": "Tuoremehu",
+          "badges": [
+            "L",
+            "G"
+          ],
+          "price": "3,50€"
+        },
+        {
+          "name": "Kotikalja",
+          "badges": [],
+          "price": "2,50€"
+        }
       ]
     }
   ]

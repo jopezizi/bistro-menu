@@ -49,16 +49,25 @@
     line-height: 1.5;
   }
 
+  fieldset {
+    border: none;
+    margin: 0 0 24px;
+    padding: 0;
+  }
+
   label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
   }
 
   textarea {
     width: 100%;
-    min-height: 320px;
-    padding: 16px;
+    min-height: 140px;
+    padding: 14px 16px;
     border: 2px solid var(--green);
     border-radius: 10px;
     background: #fff;
@@ -74,15 +83,15 @@
     outline-offset: 2px;
   }
 
-  .example {
+  .hint {
     font-size: 0.85rem;
     opacity: 0.7;
-    margin-top: 8px;
+    margin: 0 0 32px;
     line-height: 1.4;
   }
 
   button {
-    margin-top: 24px;
+    margin-top: 8px;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 1.05rem;
@@ -125,14 +134,43 @@
 <main>
   <h1>Päivitä menu</h1>
   <p class="subtitle">
-    Liitä alle menu vapaana tekstinä — kirjoitusvirheet ja epäsiisti muotoilu eivät haittaa,
-    Make.com-skenaario jäsentää ja siistii sisällön automaattisesti.
+    Muokkaa suoraan olemassa olevia tuotteita ja hintoja kategorioittain.
+    Kirjoitusvirheet ja epäsiisti muotoilu eivät haittaa —
+    Make.com-skenaario siistii ja normalisoi sisällön automaattisesti.
   </p>
 
   <form id="menu-form">
-    <label for="menu-text">Menuteksti</label>
-    <textarea id="menu-text" name="menu-text" placeholder="Kuumat juomat / Tavallinen kahvi 2e / Erikoiskahvit 3e / Tee 2,5e (L)(G)&#10;Suolaista / Kasvispiirakka 5,5e (L) / Karjalanpiirakka 3,5e&#10;Makeaa / Korvapuusti 3e / Porkkanakakku 4,5e (G)&#10;Kylmät juomat / Vesi 1e (L)(G) / Tuoremehu 3,5e (L)(G)" required></textarea>
-    <p class="example">Vinkki: erottele kategoriat ja tuotteet vaikka rivinvaihdoilla tai kauttaviivoilla — tekoäly hoitaa jäsentelyn.</p>
+    <fieldset>
+      <label for="cat-suolaista">Suolaista</label>
+      <textarea id="cat-suolaista" name="cat-suolaista">Kasvispiirakka 5,50€ (L)
+Karjalanpiirakka, muna-voi 3,50€
+Lohikeitto 9,90€ (G)
+Falafelwrap 8,50€ (L)</textarea>
+    </fieldset>
+
+    <fieldset>
+      <label for="cat-makeaa">Makeaa</label>
+      <textarea id="cat-makeaa" name="cat-makeaa">Korvapuusti 3,00€
+Porkkanakakku 4,50€ (G)
+Suklaakeksi 2,00€ (L)(G)</textarea>
+    </fieldset>
+
+    <fieldset>
+      <label for="cat-kuumat">Kuumat juomat</label>
+      <textarea id="cat-kuumat" name="cat-kuumat">Tavallinen kahvi 2,00€
+Erikoiskahvit 3,00€
+Tee 2,50€ (L)(G)
+Kaakao 3,00€ (G)</textarea>
+    </fieldset>
+
+    <fieldset>
+      <label for="cat-kylmat">Kylmät juomat</label>
+      <textarea id="cat-kylmat" name="cat-kylmat">Vesi 1,00€ (L)(G)
+Tuoremehu 3,50€ (L)(G)
+Kotikalja 2,50€</textarea>
+    </fieldset>
+
+    <p class="hint">Vinkki: yksi tuote per rivi, esim. "Tuotteen nimi hinta (L)(G)" — tekoäly siistii kirjoitusvirheet ja normalisoi hintamuodon. Tyhjennä kenttä kokonaan jos haluat poistaa koko kategorian.</p>
 
     <button type="submit" id="submit-btn">Lähetä menu</button>
     <p class="status" id="status" role="status" aria-live="polite"></p>
@@ -156,10 +194,27 @@
     if (override) CONFIG.webhookUrl = override;
   })();
 
+  const CATEGORIES = [
+    { label: 'Suolaista', id: 'cat-suolaista' },
+    { label: 'Makeaa', id: 'cat-makeaa' },
+    { label: 'Kuumat juomat', id: 'cat-kuumat' },
+    { label: 'Kylmät juomat', id: 'cat-kylmat' }
+  ];
+
   const form = document.getElementById('menu-form');
-  const textarea = document.getElementById('menu-text');
   const button = document.getElementById('submit-btn');
   const status = document.getElementById('status');
+
+  function buildRawText() {
+    return CATEGORIES
+      .map(cat => {
+        const el = document.getElementById(cat.id);
+        const body = el.value.trim();
+        return body ? cat.label + '\n' + body : '';
+      })
+      .filter(Boolean)
+      .join('\n\n');
+  }
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -170,7 +225,7 @@
       return;
     }
 
-    const text = textarea.value.trim();
+    const text = buildRawText();
     if (!text) return;
 
     button.disabled = true;
