@@ -6,24 +6,9 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Täytetty sämpylä",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Panuzzo (ilmakuivattu kinkku / kasvis)",
-          "badges": ["L"],
-          "price": "5,50€"
-        },
-        {
-          "name": "Kanapiiras",
+          "name": "Kinkkusämpylä",
           "badges": ["L", "G"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Pizzaleipä, pekoni & portobello",
-          "badges": ["L"],
-          "price": "3,50€"
+          "price": "5,00€"
         }
       ]
     },
@@ -31,24 +16,14 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon raparperipiirakka",
+          "name": "Korvapuusti",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Munkkirinkilä",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Voisilmäpulla",
-          "badges": ["L"],
-          "price": "2,50€"
+          "name": "Kakkupala",
+          "badges": ["G"],
+          "price": "4,50€"
         }
       ]
     },
@@ -56,19 +31,14 @@
       "name": "Kuumat juomat",
       "items": [
         {
-          "name": "Tavallinen kahvi",
+          "name": "Kahvi",
           "badges": [],
           "price": "2,00€"
-        },
-        {
-          "name": "Erikoiskahvi",
-          "badges": [],
-          "price": "3,00€"
         },
         {
           "name": "Tee",
           "badges": [],
-          "price": "2,00€"
+          "price": "1,50€"
         }
       ]
     },
@@ -76,19 +46,9 @@
       "name": "Kylmät juomat",
       "items": [
         {
-          "name": "Virvoitusjuoma",
+          "name": "Limsa",
           "badges": [],
           "price": "3,00€"
-        },
-        {
-          "name": "Vichy",
-          "badges": [],
-          "price": "2,50€"
-        },
-        {
-          "name": "Pillimehu",
-          "badges": [],
-          "price": "1,50€"
         }
       ]
     }
