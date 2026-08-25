@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-18T12:00:00Z",
+  "updated": "2024-05-24T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -11,7 +11,7 @@
           "price": "5,50€"
         },
         {
-          "name": "Karjalanpiirakka, munavoi",
+          "name": "Karjalanpiirakka munavoilla",
           "badges": [],
           "price": "3,50€"
         },
@@ -19,11 +19,6 @@
           "name": "Lohikeitto",
           "badges": ["G"],
           "price": "9,90€"
-        },
-        {
-          "name": "Falafelwrap",
-          "badges": ["L"],
-          "price": "8,50€"
         }
       ]
     },
