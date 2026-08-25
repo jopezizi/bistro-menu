@@ -1,39 +1,95 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-24",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
-        { "name": "Kasvispiirakka", "badges": ["L"], "price": "5,50€" },
-        { "name": "Karjalanpiirakka munavoilla", "badges": [], "price": "3,50€" },
-        { "name": "Lohikeitto", "badges": ["G"], "price": "9,90€" },
-        { "name": "Panuzzo (kinkku-juusto)", "badges": ["L", "G"], "price": "10,00€" }
+        {
+          "name": "Täytetty sämpylä",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Panuzzo (ilmakuivattu kinkku / kasvis)",
+          "badges": ["L"],
+          "price": "5,50€"
+        },
+        {
+          "name": "Kanapiiras",
+          "badges": ["L", "G"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Pizzaleipä, pekoni & portobello",
+          "badges": ["L"],
+          "price": "3,50€"
+        }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        { "name": "Korvapuusti", "badges": [], "price": "3,00€" },
-        { "name": "Porkkanakakku", "badges": ["G"], "price": "4,50€" },
-        { "name": "Suklaakeksi", "badges": ["L", "G"], "price": "2,00€" }
+        {
+          "name": "Talon raparperipiirakka",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Mustaherukka-raparperipiirakka",
+          "badges": ["L", "G"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Munkkirinkilä",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
+          "price": "2,50€"
+        }
       ]
     },
     {
       "name": "Kuumat juomat",
       "items": [
-        { "name": "Tavallinen kahvi", "badges": [], "price": "2,00€" },
-        { "name": "Erikoiskahvi", "badges": [], "price": "3,00€" },
-        { "name": "Tee", "badges": ["L", "G"], "price": "2,50€" },
-        { "name": "Kaakao", "badges": ["G"], "price": "3,00€" }
+        {
+          "name": "Tavallinen kahvi",
+          "badges": [],
+          "price": "2,00€"
+        },
+        {
+          "name": "Erikoiskahvi",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Tee",
+          "badges": [],
+          "price": "2,00€"
+        }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        { "name": "Vesi", "badges": ["L", "G"], "price": "1,00€" },
-        { "name": "Tuoremehu", "badges": ["L", "G"], "price": "3,50€" },
-        { "name": "Kotikalja", "badges": [], "price": "2,50€" }
+        {
+          "name": "Virvoitusjuoma",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Vichy",
+          "badges": [],
+          "price": "2,50€"
+        },
+        {
+          "name": "Pillimehu",
+          "badges": [],
+          "price": "1,50€"
+        }
       ]
     }
   ]
