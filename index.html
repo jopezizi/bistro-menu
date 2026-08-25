@@ -285,7 +285,7 @@
       });
 
       setFieldsEnabled(true);
-      loadStatus.textContent = 'Nykyinen menu ladattu ' + (data.updated ? '(päivitetty ' + data.updated + ')' : '') + '.';
+      loadStatus.textContent = 'Nykyinen menu ladattu.';
       loadStatus.className = 'load-status ok';
     } catch (err) {
       // Ei jätetä kenttiin vanhaa esimerkkisisältöä — se voisi näyttää
