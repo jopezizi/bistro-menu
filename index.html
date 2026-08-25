@@ -116,6 +116,34 @@
   .status.ok { color: var(--green); }
   .status.err { color: #9c2b2b; }
 
+  .load-status {
+    font-weight: 600;
+    margin: 0 0 24px;
+    color: var(--green);
+  }
+
+  .load-status.err {
+    color: #9c2b2b;
+  }
+
+  .load-status .retry-btn {
+    margin-left: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #9c2b2b;
+    background: none;
+    border: 2px solid #9c2b2b;
+    border-radius: 8px;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+
+  textarea:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
   footer {
     margin-top: 56px;
     text-align: center;
@@ -139,39 +167,31 @@
     Kirjoita yksi tuote per rivi.
   </p>
 
+  <p class="load-status" id="load-status" role="status" aria-live="polite">Ladataan nykyistä menua…</p>
+
   <form id="menu-form">
     <fieldset>
       <label for="cat-suolaista">Suolaista</label>
-      <textarea id="cat-suolaista" name="cat-suolaista">Kasvispiirakka 5,50€ (L)
-Karjalanpiirakka, muna-voi 3,50€
-Lohikeitto 9,90€ (G)
-Falafelwrap 8,50€ (L)</textarea>
+      <textarea id="cat-suolaista" name="cat-suolaista" placeholder="Ladataan…" disabled></textarea>
     </fieldset>
 
     <fieldset>
       <label for="cat-makeaa">Makeaa</label>
-      <textarea id="cat-makeaa" name="cat-makeaa">Korvapuusti 3,00€
-Porkkanakakku 4,50€ (G)
-Suklaakeksi 2,00€ (L)(G)</textarea>
+      <textarea id="cat-makeaa" name="cat-makeaa" placeholder="Ladataan…" disabled></textarea>
     </fieldset>
 
     <fieldset>
       <label for="cat-kuumat">Kuumat juomat</label>
-      <textarea id="cat-kuumat" name="cat-kuumat">Tavallinen kahvi 2,00€
-Erikoiskahvit 3,00€
-Tee 2,50€ (L)(G)
-Kaakao 3,00€ (G)</textarea>
+      <textarea id="cat-kuumat" name="cat-kuumat" placeholder="Ladataan…" disabled></textarea>
     </fieldset>
 
     <fieldset>
       <label for="cat-kylmat">Kylmät juomat</label>
-      <textarea id="cat-kylmat" name="cat-kylmat">Vesi 1,00€ (L)(G)
-Tuoremehu 3,50€ (L)(G)
-Kotikalja 2,50€</textarea>
+      <textarea id="cat-kylmat" name="cat-kylmat" placeholder="Ladataan…" disabled></textarea>
     </fieldset>
 
 
-    <button type="submit" id="submit-btn">Lähetä menu</button>
+    <button type="submit" id="submit-btn" disabled>Lähetä menu</button>
     <p class="status" id="status" role="status" aria-live="polite"></p>
   </form>
 
@@ -215,6 +235,70 @@ Kotikalja 2,50€</textarea>
       .join('\n\n');
   }
 
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  const loadStatus = document.getElementById('load-status');
+
+  function setFieldsEnabled(enabled) {
+    CATEGORIES.forEach(cat => {
+      document.getElementById(cat.id).disabled = !enabled;
+    });
+    button.disabled = !enabled;
+  }
+
+  async function loadCurrentMenu() {
+    loadStatus.textContent = 'Ladataan nykyistä menua…';
+    loadStatus.className = 'load-status';
+
+    try {
+      // file:// avattuna selain estää tämän hakemisen (CORS) — sivu on aina
+      // avattava osoitteesta (esim. https://jopezizi.github.io/bistro-menu/),
+      // ei paikallisena tiedostona kaksoisnapauttamalla.
+      const res = await fetch('data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('data.json ei latautunut (HTTP ' + res.status + ')');
+      const data = await res.json();
+
+      const byName = {};
+      (data.categories || []).forEach(c => { byName[c.name] = c; });
+
+      CATEGORIES.forEach(cat => {
+        const found = byName[cat.label];
+        const el = document.getElementById(cat.id);
+        if (!found || !Array.isArray(found.items)) {
+          el.value = '';
+          return;
+        }
+
+        el.value = found.items
+          .map(item => {
+            let line = (item.name || '').trim() + ' ' + (item.price || '').trim();
+            if (Array.isArray(item.badges) && item.badges.length > 0) {
+              line += ' (' + item.badges.join(', ') + ')';
+            }
+            return line.trim();
+          })
+          .join('\n');
+      });
+
+      setFieldsEnabled(true);
+      loadStatus.textContent = 'Nykyinen menu ladattu ' + (data.updated ? '(päivitetty ' + data.updated + ')' : '') + '.';
+      loadStatus.className = 'load-status ok';
+    } catch (err) {
+      // Ei jätetä kenttiin vanhaa esimerkkisisältöä — se voisi näyttää
+      // aidolta menulta, vaikka data ei olisikaan ajan tasalla. Kentät
+      // pysyvät tyhjinä ja lukittuina kunnes lataus onnistuu.
+      console.error('Nykyisen menun haku epäonnistui:', err);
+      loadStatus.innerHTML = 'Menua ei saatu ladattua (' + escapeHtml(err.message) + '). Tarkista, että sivu on avattu netistä eikä paikallisena tiedostona, ja yritä uudelleen. <button type="button" class="retry-btn" id="retry-load-btn">Yritä uudelleen</button>';
+      loadStatus.className = 'load-status err';
+      const retryBtn = document.getElementById('retry-load-btn');
+      if (retryBtn) retryBtn.addEventListener('click', loadCurrentMenu);
+    }
+  }
+
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -250,6 +334,8 @@ Kotikalja 2,50€</textarea>
       button.disabled = false;
     }
   });
+
+  loadCurrentMenu();
 </script>
 </body>
 </html>
