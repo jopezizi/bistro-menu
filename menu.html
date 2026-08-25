@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syö Elävältä! – Elävä Bistro</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #D8E9A2;
+    --green: #00774A;
+    --ink: #1F2A1A;
+    --badge: #4C6B3A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  h1.title {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    color: var(--green);
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    text-align: center;
+    margin: 0 0 48px;
+    letter-spacing: -0.01em;
+  }
+
+  section.category {
+    margin-bottom: 36px;
+  }
+
+  h2.category-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 1.4rem;
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--green);
+  }
+
+  ul.items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 8px 0;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .item-name {
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+
+  .item-badges {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--badge);
+    margin-left: 6px;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+  }
+
+  .item-price {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  footer {
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .logotype {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    color: var(--green);
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  .state-message {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--ink);
+    opacity: 0.7;
+    padding: 40px 0;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="title">Syö Elävältä!</h1>
+  <div id="menu-root">
+    <p class="state-message">Ladataan menua…</p>
+  </div>
+  <footer>
+    <div class="logotype">Elävä Bistro</div>
+  </footer>
+</main>
+
+<script>
+  async function loadMenu() {
+    const root = document.getElementById('menu-root');
+    try {
+      const res = await fetch('data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('data.json ei latautunut (HTTP ' + res.status + ')');
+      const data = await res.json();
+      renderMenu(root, data);
+    } catch (err) {
+      root.innerHTML = '<p class="state-message">Menua ei juuri nyt saatu ladattua. (' + escapeHtml(err.message) + ')</p>';
+      console.error(err);
+    }
+  }
+
+  function renderMenu(root, data) {
+    const categories = Array.isArray(data.categories) ? data.categories : [];
+    if (categories.length === 0) {
+      root.innerHTML = '<p class="state-message">Menu on tyhjä toistaiseksi.</p>';
+      return;
+    }
+
+    root.innerHTML = '';
+    for (const category of categories) {
+      const section = document.createElement('section');
+      section.className = 'category';
+
+      const h2 = document.createElement('h2');
+      h2.className = 'category-name';
+      h2.textContent = category.name || '';
+      section.appendChild(h2);
+
+      const ul = document.createElement('ul');
+      ul.className = 'items';
+
+      for (const item of (category.items || [])) {
+        const li = document.createElement('li');
+        li.className = 'item';
+
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'item-name';
+        nameSpan.textContent = item.name || '';
+
+        if (Array.isArray(item.badges) && item.badges.length > 0) {
+          const badgeSpan = document.createElement('span');
+          badgeSpan.className = 'item-badges';
+          badgeSpan.textContent = item.badges.map(b => '(' + b + ')').join(' ');
+          nameSpan.appendChild(badgeSpan);
+        }
+
+        const priceSpan = document.createElement('span');
+        priceSpan.className = 'item-price';
+        priceSpan.textContent = '• ' + (item.price || '');
+
+        li.appendChild(nameSpan);
+        li.appendChild(priceSpan);
+        ul.appendChild(li);
+      }
+
+      section.appendChild(ul);
+      root.appendChild(section);
+    }
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  loadMenu();
+</script>
+</body>
+</html>
