@@ -1,14 +1,29 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2024-05-24T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Kinkkusämpylä",
+          "name": "Talon tomaatti-ilmakuivattu kinkkupiirakka",
+          "badges": ["L"],
+          "price": "4,00€"
+        },
+        {
+          "name": "Talon tomaatti-mozzarellapiirakka",
+          "badges": [],
+          "price": "4,00€"
+        },
+        {
+          "name": "Sämpylä juustolla tai kinkulla",
+          "badges": ["L"],
+          "price": "4,00€"
+        },
+        {
+          "name": "Kana- tai kasvispiiras",
           "badges": ["L", "G"],
-          "price": "5,00€"
+          "price": "3,00€"
         }
       ]
     },
@@ -16,14 +31,24 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Korvapuusti",
+          "name": "Munkkirinkeli",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
+          "price": "2,50€"
+        },
+        {
+          "name": "Talon raparperipiirakka",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Kakkupala",
-          "badges": ["G"],
-          "price": "4,50€"
+          "name": "Mustaherukka-raparperipiirakka",
+          "badges": ["L", "G"],
+          "price": "3,00€"
         }
       ]
     },
