@@ -1,12 +1,12 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-24T12:00:00Z",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon tomaatti-ilmakuivattu kinkkupiirakka",
+          "name": "Talon tomaatti-kinkkupiirakka",
           "badges": ["L"],
           "price": "4,00€"
         },
@@ -16,12 +16,12 @@
           "price": "4,00€"
         },
         {
-          "name": "Sämpylä juustolla tai kinkulla",
+          "name": "Panuzzo: Italialainen pizza-sandwich (kinkku / muna-kasvis)",
           "badges": ["L"],
-          "price": "4,00€"
+          "price": "5,50€"
         },
         {
-          "name": "Kana- tai kasvispiiras",
+          "name": "Kanapiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
         }
@@ -34,11 +34,6 @@
           "name": "Munkkirinkeli",
           "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Voisilmäpulla",
-          "badges": ["L"],
-          "price": "2,50€"
         },
         {
           "name": "Talon raparperipiirakka",
@@ -71,9 +66,14 @@
       "name": "Kylmät juomat",
       "items": [
         {
-          "name": "Limsa",
+          "name": "Virvoitusjuomat",
           "badges": [],
           "price": "3,00€"
+        },
+        {
+          "name": "Vichy",
+          "badges": [],
+          "price": "2,50€"
         }
       ]
     }
