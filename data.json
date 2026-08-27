@@ -7,7 +7,9 @@
       "items": [
         {
           "name": "Talon tomaatti-kinkkupiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "4,00€"
         },
         {
@@ -17,12 +19,17 @@
         },
         {
           "name": "Panuzzo: Italialainen pizza-sandwich (kinkku / muna-kasvis)",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "5,50€"
         },
         {
           "name": "Kanapiiras",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
@@ -32,17 +39,24 @@
       "items": [
         {
           "name": "Munkkirinkeli",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
           "name": "Talon raparperipiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
