@@ -16,13 +16,13 @@
           "price": "4,00€"
         },
         {
-          "name": "Pizzaleipä (pekoni-portobello)",
-          "badges": [],
-          "price": "4,00€"
-        },
-        {
           "name": "Kana-/Kasvispiiras",
           "badges": ["L", "G"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Liha-riisipasteija",
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
@@ -43,6 +43,11 @@
         {
           "name": "Mustaherukka-raparperipiirakka",
           "badges": ["L", "G"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
