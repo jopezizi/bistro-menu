@@ -324,7 +324,7 @@
 
       if (!res.ok) throw new Error('Palvelin vastasi virheellä (HTTP ' + res.status + ')');
 
-      status.textContent = 'Menu lähetetty! Päivitys näkyy menu.html-sivulla hetken kuluttua.';
+      status.textContent = 'Menu lähetetty! Päivitys näkyy diginäytöllä hetken kuluttua.';
       status.className = 'status ok';
     } catch (err) {
       status.textContent = 'Lähetys epäonnistui: ' + err.message;
