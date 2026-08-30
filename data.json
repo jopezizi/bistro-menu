@@ -1,28 +1,29 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2024-05-24T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon tomaatti-kinkkupiirakka",
-          "badges": ["L"],
-          "price": "4,00€"
-        },
-        {
-          "name": "Talon tomaatti-juustopiirakka",
-          "badges": ["L"],
-          "price": "4,00€"
-        },
-        {
-          "name": "Kana-/Kasvispiiras",
-          "badges": ["L", "G"],
+          "name": "Talon tomaatti-salaattijuustopiirakka",
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
+          "name": "Talon tomaatti-salaattijuusto-kinkkupiirakka",
+          "badges": [
+            "L"
+          ],
+          "price": "4,00€"
+        },
+        {
           "name": "Liha-riisipasteija",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         }
       ]
@@ -32,22 +33,23 @@
       "items": [
         {
           "name": "Munkkirinkeli",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
           "name": "Talon raparperipiirakka",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         }
       ]
