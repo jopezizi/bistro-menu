@@ -1,29 +1,18 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-24T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
           "name": "Talon tomaatti-salaattijuustopiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Talon tomaatti-salaattijuusto-kinkkupiirakka",
-          "badges": [
-            "L"
-          ],
-          "price": "4,00€"
-        },
-        {
           "name": "Liha-riisipasteija",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
@@ -33,23 +22,17 @@
       "items": [
         {
           "name": "Munkkirinkeli",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
           "name": "Talon raparperipiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
