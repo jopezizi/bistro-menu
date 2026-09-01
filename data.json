@@ -6,13 +6,30 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon tomaatti-salaattipiirakka",
-          "badges": ["L"],
+          "name": "Pizzaleipä: portobello & pekoni",
+          "badges": [],
+          "price": "4,00€"
+        },
+        {
+          "name": "Muna-anjovisleipä",
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
-          "name": "Liha-riisipasteija",
-          "badges": ["L"],
+          "name": "Panuzzo, italialainen pizzasandwich: kasvis / kinkku",
+          "badges": [
+            "L"
+          ],
+          "price": "5,50€"
+        },
+        {
+          "name": "Kasvis-/kanapiiras",
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
@@ -22,17 +39,31 @@
       "items": [
         {
           "name": "Munkkirinkeli",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
           "name": "Talon omenapiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
+          "price": "3,00€"
+        },
+        {
+          "name": "Mustaherukka-raparperipiirakka",
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
