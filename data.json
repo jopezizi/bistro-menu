@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-17",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
@@ -19,11 +19,6 @@
           "name": "Panuzzo (italialainen pizzasandwich): kasvis/kinkku",
           "badges": ["L"],
           "price": "5,50€"
-        },
-        {
-          "name": "Kasvis- tai kanapiiras",
-          "badges": ["L", "G"],
-          "price": "3,00€"
         },
         {
           "name": "Talon tomaattinen kasvispiirakka",
@@ -48,7 +43,7 @@
         {
           "name": "Voisilmäpulla",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
