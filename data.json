@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2024-05-17",
   "categories": [
     {
       "name": "Suolaista",
@@ -12,25 +12,23 @@
         },
         {
           "name": "Muna-anjovisleipä",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Panuzzo (italialainen pizzasandwich): kasvis/kinkku",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "5,50€"
         },
         {
           "name": "Kasvis- tai kanapiiras",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
+        },
+        {
+          "name": "Talon tomaattinen kasvispiirakka",
+          "badges": ["L"],
+          "price": "3,50€"
         }
       ]
     },
@@ -39,31 +37,22 @@
       "items": [
         {
           "name": "Munkkirinkeli",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
           "name": "Talon omenapiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
