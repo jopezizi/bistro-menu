@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2024-05-18T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -29,6 +29,11 @@
           "name": "Talon omenapiirakka",
           "badges": ["L"],
           "price": "3,50€"
+        },
+        {
+          "name": "Munkkirinkilä",
+          "badges": ["L"],
+          "price": "3,00€"
         },
         {
           "name": "Voisilmäpulla",
