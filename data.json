@@ -1,15 +1,10 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
-        {
-          "name": "Panuzzo (italialainen pizzasandwich): nyhtöpossu",
-          "badges": ["L"],
-          "price": "4,00€"
-        },
         {
           "name": "Talon piirakka: ilmakuivattu kinkku / kasvis",
           "badges": ["L"],
