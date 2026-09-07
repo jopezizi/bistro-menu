@@ -1,12 +1,12 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon piirakka: ilmakuivattu kinkku / kasvis",
+          "name": "Talon piirakka: ilmakuivattu kinkku",
           "badges": ["L"],
           "price": "3,50€"
         },
@@ -18,7 +18,17 @@
         {
           "name": "Liha-riisipasteija",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
+        },
+        {
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Muna-anjovisleipä",
+          "badges": ["L"],
+          "price": "2,50€"
         }
       ]
     },
