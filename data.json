@@ -1,29 +1,45 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2024-05-20",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
           "name": "Talon kasvispiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Piiras: kana / kasvis",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Muna-anjovisleipä (eilinen)",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "2,00€"
         },
         {
           "name": "Kinkku- tai juustosämpylä (eilinen)",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "2,00€"
+        },
+        {
+          "name": "Pizzadog",
+          "badges": [
+            "L"
+          ],
+          "price": "6,00€"
         }
       ]
     },
@@ -32,22 +48,31 @@
       "items": [
         {
           "name": "Talon omenapiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,50€"
         },
         {
           "name": "Munkkirinkilä",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
           "name": "Korvapuusti (eilinen)",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "1,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
