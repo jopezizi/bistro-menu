@@ -1,45 +1,34 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-20",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
           "name": "Talon kasvispiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Piiras: kana / kasvis",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,50€"
         },
         {
-          "name": "Muna-anjovisleipä (eilinen)",
-          "badges": [
-            "L"
-          ],
-          "price": "2,00€"
+          "name": "Muna-anjovisleipä",
+          "badges": ["L"],
+          "price": "3,00€"
         },
         {
-          "name": "Kinkku- tai juustosämpylä (eilinen)",
-          "badges": [
-            "L"
-          ],
-          "price": "2,00€"
+          "name": "Panuzzo: kaiser / muna",
+          "badges": ["L"],
+          "price": "5,00€"
         },
         {
-          "name": "Pizzadog",
-          "badges": [
-            "L"
-          ],
-          "price": "6,00€"
+          "name": "Pizzadog (eilinen)",
+          "badges": ["L"],
+          "price": "3,00€"
         }
       ]
     },
@@ -48,31 +37,22 @@
       "items": [
         {
           "name": "Talon omenapiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Munkkirinkilä",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
-        },
-        {
-          "name": "Korvapuusti (eilinen)",
-          "badges": [
-            "L"
-          ],
+          "name": "Munkkirinkilä (eilinen)",
+          "badges": ["L"],
           "price": "1,00€"
         },
         {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
+          "price": "2,50€"
+        },
+        {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
