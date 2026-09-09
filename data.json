@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2026-03-31",
+  "updated": "2024-05-24T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -21,7 +21,7 @@
           "price": "3,50€"
         },
         {
-          "name": "Panuzzo: kaiser / muna",
+          "name": "Panuozzo: kaiser / muna",
           "badges": ["L"],
           "price": "5,00€"
         }
