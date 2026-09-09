@@ -1,90 +1,38 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2024-05-13T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
-        {
-          "name": "Talon kasvispiirakka",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Piiras: kana / kasvis",
-          "badges": ["L", "G"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Muna-anjovisleipä",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Panuozzo: kaiser / muna",
-          "badges": ["L"],
-          "price": "5,00€"
-        },
-        {
-          "name": "Pizzadog (eilinen)",
-          "badges": ["L"],
-          "price": "3,00€"
-        }
+        { "name": "Talon kasvispiirakka", "badges": ["L"], "price": "3,50€" },
+        { "name": "Piiras: kana / kasvis", "badges": ["L", "G"], "price": "3,00€" },
+        { "name": "Muna-anjovisleipä", "badges": ["L"], "price": "3,50€" },
+        { "name": "Panuzzo: kaiser / muna", "badges": ["L"], "price": "5,00€" },
+        { "name": "Pizzadog (eilinen)", "badges": ["L"], "price": "3,00€" }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        {
-          "name": "Talon omenapiirakka",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Munkkirinkilä (eilinen)",
-          "badges": ["L"],
-          "price": "1,00€"
-        },
-        {
-          "name": "Voisilmäpulla",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
-          "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
-          "price": "3,00€"
-        }
+        { "name": "Talon omenapiirakka", "badges": ["L"], "price": "3,50€" },
+        { "name": "Munkkirinkilä (eilinen)", "badges": ["L"], "price": "1,00€" },
+        { "name": "Voisilmäpulla", "badges": ["L"], "price": "2,50€" },
+        { "name": "Mustaherukka-raparperipiirakka", "badges": ["L", "G"], "price": "3,00€" }
       ]
     },
     {
       "name": "Kuumat juomat",
       "items": [
-        {
-          "name": "Kahvi",
-          "badges": [],
-          "price": "2,00€"
-        },
-        {
-          "name": "Tee",
-          "badges": [],
-          "price": "1,50€"
-        }
+        { "name": "Kahvi", "badges": [], "price": "2,00€" },
+        { "name": "Tee", "badges": [], "price": "1,50€" }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        {
-          "name": "Virvoitusjuomat",
-          "badges": [],
-          "price": "3,00€"
-        },
-        {
-          "name": "Vichy",
-          "badges": [],
-          "price": "2,50€"
-        }
+        { "name": "Virvoitusjuomat", "badges": [], "price": "3,00€" },
+        { "name": "Vichy", "badges": [], "price": "2,50€" }
       ]
     }
   ]
