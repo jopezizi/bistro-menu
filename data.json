@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-24T12:00:00Z",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -21,7 +21,7 @@
           "price": "3,50€"
         },
         {
-          "name": "Panuozzo: kaiser / muna",
+          "name": "Panuzzo: kaiser / muna",
           "badges": ["L"],
           "price": "5,00€"
         }
@@ -74,6 +74,11 @@
           "name": "Vichy",
           "badges": [],
           "price": "2,50€"
+        },
+        {
+          "name": "Pillimehu",
+          "badges": [],
+          "price": "2,00€"
         }
       ]
     }
