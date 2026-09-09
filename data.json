@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-15T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
@@ -11,14 +11,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Piiras: kana / kasvis",
+          "name": "Piiras: kana",
           "badges": ["L", "G"],
           "price": "3,00€"
-        },
-        {
-          "name": "Muna-anjovisleipä",
-          "badges": ["L"],
-          "price": "3,50€"
         },
         {
           "name": "Panuzzo: kaiser / muna",
