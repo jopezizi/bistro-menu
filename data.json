@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-18",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -36,7 +36,7 @@
           "price": "3,50€"
         },
         {
-          "name": "Voisilmäpulla",
+          "name": "Korvapuusti",
           "badges": ["L"],
           "price": "2,50€"
         },
@@ -59,11 +59,6 @@
           "name": "Tee",
           "badges": [],
           "price": "1,50€"
-        },
-        {
-          "name": "Markkinatarjous: kahvi/tee + pulla",
-          "badges": ["L"],
-          "price": "3,00€"
         }
       ]
     },
