@@ -1,14 +1,14 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-18T12:00:00Z",
+  "updated": "2024-05-18",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon piirakka: kasvis / ilmakuivattu kinkku (eilinen)",
+          "name": "Talon piirakka: kasvis / ilmakuivattu kinkku",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
           "name": "Piiras: kana",
