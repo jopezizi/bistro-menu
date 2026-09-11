@@ -7,24 +7,17 @@
       "items": [
         {
           "name": "Talon piirakka: kasvis / ilmakuivattu kinkku (eilinen)",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "2,50€"
         },
         {
           "name": "Piiras: kana",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         },
         {
           "name": "Muna-anjovisleipä",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
@@ -34,24 +27,17 @@
       "items": [
         {
           "name": "Talon omenapiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "2,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
@@ -71,9 +57,7 @@
         },
         {
           "name": "Markkinatarjous: kahvi/tee + pulla",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
