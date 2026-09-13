@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2024-05-18",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
@@ -11,9 +11,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Piiras: kana (eilinen)",
+          "name": "Piiras: kana/kasvis",
           "badges": ["L", "G"],
-          "price": "2,00€"
+          "price": "3,50€"
         },
         {
           "name": "Pizzaleipä: portobello & pekoni",
