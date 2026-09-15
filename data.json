@@ -6,9 +6,9 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon piirakka: kasvis / ilmakuivattu kinkku",
+          "name": "Talon piirakka: ilmakuivattu kinkku (eilinen)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         },
         {
           "name": "Piiras: kana/kasvis",
@@ -16,9 +16,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Muna-anjovisleipä",
+          "name": "Muna-anjovisleipä (eilinen)",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "2,00€"
+        },
+        {
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
+          "badges": ["L"],
+          "price": "3,50€"
         },
         {
           "name": "Pizzadog",
@@ -36,12 +41,12 @@
           "price": "3,50€"
         },
         {
-          "name": "Korvapuusti",
+          "name": "Korvapuusti (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
-          "name": "Voisilmäpulla",
+          "name": "Munkkirinkilä",
           "badges": ["L"],
           "price": "3,00€"
         },
