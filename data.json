@@ -11,32 +11,27 @@
           "price": "3,50€"
         },
         {
-          "name": "Piiras: kana/kasvis",
-          "badges": ["L", "G"],
-          "price": "3,50€"
-        },
-        {
           "name": "Muna-anjovisleipä",
           "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku tai juusto) (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
+          "name": "Pizzaleipä (portobello & pekoni)",
+          "badges": [],
+          "price": "4,00€"
         },
         {
-          "name": "Kasvispiirakka",
-          "badges": ["L"],
+          "name": "Kasvispiiras",
+          "badges": ["L", "G"],
           "price": "3,00€"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Tarjoukset",
+      "items": [
         {
-          "name": "Pizzadog",
-          "badges": ["L"],
-          "price": "6,00€"
-        },
-        {
-          "name": "Tarjous: Raparperi-omenapiirakka ja kahvi",
+          "name": "Raparperi-omenapiirakka ja kahvi",
           "badges": [],
           "price": "4,00€"
         }
@@ -49,11 +44,6 @@
           "name": "Talon raparperi-omenapiirakka",
           "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Korvapuusti (eilinen)",
-          "badges": ["L"],
-          "price": "1,50€"
         },
         {
           "name": "Munkkirinkilä",
