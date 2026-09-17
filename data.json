@@ -16,11 +16,6 @@
           "price": "2,00€"
         },
         {
-          "name": "Pizzaleipä (portobello & pekoni)",
-          "badges": [],
-          "price": "4,00€"
-        },
-        {
           "name": "Kasvispiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
