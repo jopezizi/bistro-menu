@@ -41,6 +41,11 @@
           "price": "3,00€"
         },
         {
+          "name": "Korvapuusti (eilinen)",
+          "badges": ["L"],
+          "price": "2,00€"
+        },
+        {
           "name": "Mustaherukka-raparperipiirakka",
           "badges": ["L", "G"],
           "price": "3,00€"
