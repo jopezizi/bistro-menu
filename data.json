@@ -6,11 +6,6 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon piirakka: nyhtöpossu, tomaattisalsa (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
           "name": "Talon peruna-kasvispiirakka",
           "badges": ["L"],
           "price": "3,00€"
@@ -26,7 +21,7 @@
           "price": "4,00€"
         },
         {
-          "name": "Panuzzo (Italialainen pizza sandwich): Triplajuusto / tuplakinkku",
+          "name": "Panuzzo: Italialainen pizza sandwich - Triplajuusto / tuplakinkku",
           "badges": ["L"],
           "price": "5,50€"
         }
