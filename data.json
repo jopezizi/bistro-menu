@@ -6,9 +6,9 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon peruna-kasvispiirakka",
+          "name": "Talon peruna-kasvispiirakka (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Kasvispiiras",
@@ -16,14 +16,19 @@
           "price": "3,00€"
         },
         {
-          "name": "Pizzaleipä (portobello & pekoni)",
+          "name": "Calzone (kinkku-juusto)",
           "badges": [],
-          "price": "4,00€"
+          "price": "4,50€"
         },
         {
           "name": "Panuzzo: Italialainen pizza sandwich Triplajuusto / tuplakinkku",
           "badges": ["L"],
           "price": "5,50€"
+        },
+        {
+          "name": "Lihapasteija",
+          "badges": ["L"],
+          "price": "1,00€"
         }
       ]
     },
@@ -36,9 +41,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Munkkirinkeli",
+          "name": "Voisilmäpulla",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
