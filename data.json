@@ -6,7 +6,7 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon peruna-kasvispiirakka (eilinen)",
+          "name": "Talon peruna-kasvispiirakka",
           "badges": ["L"],
           "price": "2,00€"
         },
@@ -21,12 +21,12 @@
           "price": "4,50€"
         },
         {
-          "name": "Panuzzo: Italialainen pizza sandwich Triplajuusto",
+          "name": "Panuzzo: Italialainen pizza-sandwich Triplajuusto",
           "badges": ["L"],
           "price": "5,50€"
         },
         {
-          "name": "Lihapasteija (Kippari tarjous)",
+          "name": "Lihapasteija",
           "badges": ["L"],
           "price": "1,00€"
         }
