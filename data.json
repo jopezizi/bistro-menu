@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -21,7 +21,7 @@
           "price": "4,50€"
         },
         {
-          "name": "Lihapasteija (Kippari tarjous)",
+          "name": "Lihapasteija (Kirpparitarjous)",
           "badges": ["L"],
           "price": "1,00€"
         }
