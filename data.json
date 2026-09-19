@@ -8,7 +8,7 @@
         {
           "name": "Talon peruna-kasvispiirakka",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,50€"
         },
         {
           "name": "Kasvispiiras",
@@ -21,12 +21,7 @@
           "price": "4,50€"
         },
         {
-          "name": "Panuzzo: Italialainen pizza-sandwich Triplajuusto",
-          "badges": ["L"],
-          "price": "5,50€"
-        },
-        {
-          "name": "Lihapasteija",
+          "name": "Lihapasteija (Kippari tarjous)",
           "badges": ["L"],
           "price": "1,00€"
         }
