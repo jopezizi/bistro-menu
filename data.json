@@ -11,9 +11,19 @@
           "price": "3,50€"
         },
         {
-          "name": "Lihapasteija (Kirpparitarjous)",
+          "name": "Lihapasteija (tarjous)",
           "badges": ["L"],
           "price": "1,00€"
+        },
+        {
+          "name": "Kana- / kasvispiiras",
+          "badges": ["L", "G"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Pizzaleipä (kinkkuvalmiste)",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -29,6 +39,11 @@
           "name": "Voisilmäpulla",
           "badges": ["L"],
           "price": "2,50€"
+        },
+        {
+          "name": "Munkkirinkeli",
+          "badges": [],
+          "price": "3,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
