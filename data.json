@@ -13,7 +13,7 @@
         {
           "name": "Talon kasvispiirakka",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Kasvispiiras",
@@ -21,9 +21,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä (eilinen, juusto)",
+          "name": "Ruis kolmioleipänen",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,00€"
         }
       ]
     },
@@ -31,9 +31,9 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon raparperi-omenapiirakka (eilinen)",
+          "name": "Talon mansikka-vaniljapiirakka",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
           "name": "Munkkirinkilä",
