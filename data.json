@@ -1,15 +1,10 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
-        {
-          "name": "Talon kasvispiirakka (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
         {
           "name": "Talon kasvispiirakka",
           "badges": ["L"],
