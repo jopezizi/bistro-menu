@@ -16,7 +16,7 @@
           "price": "3,50€"
         },
         {
-          "name": "Kana- tai kasvispiiras",
+          "name": "Kasvispiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
         },
@@ -34,11 +34,6 @@
           "name": "Talon raparperi-omenapiirakka (eilinen)",
           "badges": ["L"],
           "price": "2,00€"
-        },
-        {
-          "name": "Voisilmäpulla (eilinen)",
-          "badges": ["L"],
-          "price": "1,50€"
         },
         {
           "name": "Munkkirinkilä",
