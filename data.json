@@ -6,12 +6,12 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon kasvispiirakka",
+          "name": "Talon kasvispiirakka (eilinen)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         },
         {
-          "name": "Talon kinkku-paprikapiirakka",
+          "name": "Talon kasvispiirakka",
           "badges": ["L"],
           "price": "3,50€"
         },
@@ -21,9 +21,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku tai juusto)",
+          "name": "Täytetty sämpylä (eilinen, juusto)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         },
         {
           "name": "Pizzaleipä (kinkku-mozzarella)",
@@ -36,9 +36,9 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon raparperi-omenapiirakka",
+          "name": "Talon raparperi-omenapiirakka (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Voisilmäpulla (eilinen)",
@@ -46,14 +46,14 @@
           "price": "1,50€"
         },
         {
-          "name": "Munkkirinkilä (eilinen)",
+          "name": "Munkkirinkilä",
           "badges": ["L"],
-          "price": "1,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Mustaherukka-raparperipiirakka",
+          "name": "Mustaherukka-raparperipiirakka (eilinen)",
           "badges": ["L", "G"],
-          "price": "3,00€"
+          "price": "2,00€"
         }
       ]
     },
