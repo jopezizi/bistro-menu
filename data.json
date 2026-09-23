@@ -6,6 +6,11 @@
       "name": "Suolaista",
       "items": [
         {
+          "name": "Pizzavene (tomaatti-pesto / tuplakinkku)",
+          "badges": ["L"],
+          "price": "5,50€"
+        },
+        {
           "name": "Talon kasvispiirakka",
           "badges": ["L"],
           "price": "3,50€"
