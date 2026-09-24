@@ -6,14 +6,9 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Pizzavene (tomaatti-pesto / tuplakinkku)",
+          "name": "Pizzavene (tuplakinkku)",
           "badges": ["L"],
           "price": "5,50€"
-        },
-        {
-          "name": "Talon kasvispiirakka",
-          "badges": ["L"],
-          "price": "3,00€"
         },
         {
           "name": "Kasvispiiras",
@@ -21,7 +16,7 @@
           "price": "3,00€"
         },
         {
-          "name": "Ruis kolmioleipänen",
+          "name": "Ruis-kolmioleipä",
           "badges": ["L"],
           "price": "3,00€"
         }
