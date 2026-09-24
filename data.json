@@ -6,17 +6,12 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Pizzavene (tuplakinkku)",
-          "badges": ["L"],
-          "price": "5,50€"
-        },
-        {
           "name": "Kasvispiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
         },
         {
-          "name": "Ruis-kolmioleipä",
+          "name": "Ruis kolmioleipä",
           "badges": ["L"],
           "price": "3,00€"
         }
