@@ -6,13 +6,23 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Kasvispiiras",
-          "badges": ["L", "G"],
-          "price": "3,00€"
+          "name": "Talon peruna-paprika-juustopiirakka",
+          "badges": ["L"],
+          "price": "3,50€"
         },
         {
-          "name": "Ruis kolmioleipä",
+          "name": "Ruiskolmioleipä (eilinen)",
           "badges": ["L"],
+          "price": "2,00€"
+        },
+        {
+          "name": "Schiatta-leipä (kinkku-pesto-täyte)",
+          "badges": ["L"],
+          "price": "4,50€"
+        },
+        {
+          "name": "Kana- tai kasvispiirakka",
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
@@ -23,17 +33,22 @@
         {
           "name": "Talon mansikka-vaniljapiirakka",
           "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Munkkirinkilä (eilinen)",
+          "badges": ["L"],
+          "price": "1,50€"
+        },
+        {
+          "name": "Mustaherukka-raparperipiirakka",
+          "badges": ["L", "G"],
           "price": "3,00€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Korvapuusti",
           "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Mustaherukka-raparperipiirakka (eilinen)",
-          "badges": ["L", "G"],
-          "price": "2,00€"
         }
       ]
     },
