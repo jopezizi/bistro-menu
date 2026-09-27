@@ -11,9 +11,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Croissant",
+          "name": "Kinkku-juusto calzone",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "4,50€"
         },
         {
           "name": "Kana- tai kasvispiirakka",
@@ -43,7 +43,7 @@
         {
           "name": "Mokkapala",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
