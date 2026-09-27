@@ -11,7 +11,7 @@
           "price": "3,00€"
         },
         {
-          "name": "Kinkku-juusto calzone",
+          "name": "Kinkku-juustocalzone",
           "badges": ["L"],
           "price": "4,50€"
         },
@@ -24,6 +24,11 @@
           "name": "Talon kinkku-kasvispiirakka",
           "badges": ["L"],
           "price": "3,50€"
+        },
+        {
+          "name": "Kinkku-juustocroissant",
+          "badges": ["L"],
+          "price": "4,00€"
         }
       ]
     },
