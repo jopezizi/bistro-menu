@@ -11,9 +11,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Kinkku-juustocalzone",
+          "name": "Bistron calzone (kinkku-nyhtöpossu)",
           "badges": ["L"],
-          "price": "4,50€"
+          "price": "3,00€"
         },
         {
           "name": "Kana- tai kasvispiirakka",
@@ -26,9 +26,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Kinkku-juustocroissant",
+          "name": "Kinkku-juustocroissant (eilinen)",
           "badges": ["L"],
-          "price": "4,00€"
+          "price": "2,00€"
         }
       ]
     },
@@ -36,9 +36,9 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon mansikka-vaniljapiirakka (eilinen)",
+          "name": "Talon omenapiirakka",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,50€"
         },
         {
           "name": "Munkkirinkilä",
@@ -46,9 +46,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Mokkapala",
+          "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
