@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elävä Bistro – Menun päivitys</title>
+<title>Elävä Bistro – Menun ja tarjouksen päivitys</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     --bg: #C5D8AF;
     --green: #00774A;
     --ink: #00774A;
+    --danger: #9c2b2b;
   }
 
   * { box-sizing: border-box; }
@@ -49,6 +50,39 @@
     line-height: 1.5;
   }
 
+  /* Välilehdet */
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .tab-btn {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--green);
+    background: transparent;
+    border: 2px solid var(--green);
+    border-radius: 999px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .tab-btn.active {
+    background: var(--green);
+    color: #fff;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
   fieldset {
     border: none;
     margin: 0 0 24px;
@@ -64,9 +98,8 @@
     margin-bottom: 8px;
   }
 
-  textarea {
+  textarea, input[type="text"] {
     width: 100%;
-    min-height: 140px;
     padding: 14px 16px;
     border: 2px solid var(--green);
     border-radius: 10px;
@@ -75,10 +108,18 @@
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+  }
+
+  textarea {
+    min-height: 110px;
     resize: vertical;
   }
 
-  textarea:focus {
+  #panel-menu textarea {
+    min-height: 140px;
+  }
+
+  textarea:focus, input[type="text"]:focus {
     outline: 3px solid #00774A55;
     outline-offset: 2px;
   }
@@ -86,7 +127,7 @@
   .hint {
     font-size: 0.85rem;
     opacity: 0.7;
-    margin: 0 0 32px;
+    margin: 8px 0 0;
     line-height: 1.4;
   }
 
@@ -101,7 +142,7 @@
     border-radius: 10px;
     padding: 14px 28px;
     cursor: pointer;
-    transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
   }
 
   button:hover { opacity: 0.9; }
@@ -114,7 +155,7 @@
   }
 
   .status.ok { color: var(--green); }
-  .status.err { color: #9c2b2b; }
+  .status.err { color: var(--danger); }
 
   .load-status {
     font-weight: 600;
@@ -123,7 +164,7 @@
   }
 
   .load-status.err {
-    color: #9c2b2b;
+    color: var(--danger);
   }
 
   .load-status .retry-btn {
@@ -131,17 +172,39 @@
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 700;
     font-size: 0.9rem;
-    color: #9c2b2b;
+    color: var(--danger);
     background: none;
-    border: 2px solid #9c2b2b;
+    border: 2px solid var(--danger);
     border-radius: 8px;
     padding: 4px 12px;
     cursor: pointer;
   }
 
-  textarea:disabled {
+  textarea:disabled, input[type="text"]:disabled {
     opacity: 0.6;
     cursor: wait;
+  }
+
+  /* Tarjouksen poisto */
+  .danger-zone {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 2px solid #00774A33;
+  }
+
+  .danger-zone .hint {
+    margin: 0 0 12px;
+  }
+
+  .btn-danger {
+    background: transparent;
+    color: var(--danger);
+    border: 2px solid var(--danger);
+  }
+
+  .btn-danger.armed {
+    background: var(--danger);
+    color: #fff;
   }
 
   footer {
@@ -160,40 +223,81 @@
 </head>
 <body>
 <main>
-  <h1>Päivitä menu</h1>
-  <p class="subtitle">
-    Muokkaa suoraan olemassa olevia tuotteita ja hintoja kategorioittain.
-    Kirjoitusvirheet ja epäsiisti muotoilu eivät haittaa, ne siistitään automaattisesti.
-    Kirjoita yksi tuote per rivi.
-  </p>
+  <div class="tabs">
+    <button type="button" class="tab-btn active" id="tab-btn-menu" data-tab="menu">Menu</button>
+    <button type="button" class="tab-btn" id="tab-btn-tarjous" data-tab="tarjous">Päivän tarjous</button>
+  </div>
 
-  <p class="load-status" id="load-status" role="status" aria-live="polite">Ladataan nykyistä menua…</p>
+  <!-- ===================== MENU-VÄLILEHTI ===================== -->
+  <section id="panel-menu" class="tab-panel active">
+    <h1>Päivitä menu</h1>
+    <p class="subtitle">
+      Muokkaa suoraan olemassa olevia tuotteita ja hintoja kategorioittain.
+      Kirjoitusvirheet ja epäsiisti muotoilu eivät haittaa, ne siistitään automaattisesti.
+      Kirjoita yksi tuote per rivi.
+    </p>
 
-  <form id="menu-form">
-    <fieldset>
-      <label for="cat-suolaista">Suolaista</label>
-      <textarea id="cat-suolaista" name="cat-suolaista" placeholder="Ladataan…" disabled></textarea>
-    </fieldset>
+    <p class="load-status" id="menu-load-status" role="status" aria-live="polite">Ladataan nykyistä menua…</p>
 
-    <fieldset>
-      <label for="cat-makeaa">Makeaa</label>
-      <textarea id="cat-makeaa" name="cat-makeaa" placeholder="Ladataan…" disabled></textarea>
-    </fieldset>
+    <form id="menu-form">
+      <fieldset>
+        <label for="cat-suolaista">Suolaista</label>
+        <textarea id="cat-suolaista" name="cat-suolaista" placeholder="Ladataan…" disabled></textarea>
+      </fieldset>
 
-    <fieldset>
-      <label for="cat-kuumat">Kuumat juomat</label>
-      <textarea id="cat-kuumat" name="cat-kuumat" placeholder="Ladataan…" disabled></textarea>
-    </fieldset>
+      <fieldset>
+        <label for="cat-makeaa">Makeaa</label>
+        <textarea id="cat-makeaa" name="cat-makeaa" placeholder="Ladataan…" disabled></textarea>
+      </fieldset>
 
-    <fieldset>
-      <label for="cat-kylmat">Kylmät juomat</label>
-      <textarea id="cat-kylmat" name="cat-kylmat" placeholder="Ladataan…" disabled></textarea>
-    </fieldset>
+      <fieldset>
+        <label for="cat-kuumat">Kuumat juomat</label>
+        <textarea id="cat-kuumat" name="cat-kuumat" placeholder="Ladataan…" disabled></textarea>
+      </fieldset>
 
+      <fieldset>
+        <label for="cat-kylmat">Kylmät juomat</label>
+        <textarea id="cat-kylmat" name="cat-kylmat" placeholder="Ladataan…" disabled></textarea>
+      </fieldset>
 
-    <button type="submit" id="submit-btn" disabled>Lähetä menu</button>
-    <p class="status" id="status" role="status" aria-live="polite"></p>
-  </form>
+      <button type="submit" id="menu-submit-btn" disabled>Lähetä menu</button>
+      <p class="status" id="menu-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- ===================== TARJOUS-VÄLILEHTI ===================== -->
+  <section id="panel-tarjous" class="tab-panel">
+    <h1>Päivän tarjous</h1>
+    <p class="subtitle">
+      Kirjoita tämänhetkinen tarjous. Kirjoitusvirheet ja epäsiisti muotoilu
+      eivät haittaa, ne siistitään automaattisesti.
+    </p>
+
+    <p class="load-status" id="tarjous-load-status" role="status" aria-live="polite">Ladataan nykyistä tarjousta…</p>
+
+    <form id="tarjous-form">
+      <fieldset>
+        <label for="tuote">Tuote</label>
+        <textarea id="tuote" name="tuote" placeholder="Ladataan…" disabled></textarea>
+        <p class="hint">Esim. "Itsetehtyä omenapiirakkaa ja kahvi"</p>
+      </fieldset>
+
+      <fieldset>
+        <label for="hinta">Hinta</label>
+        <input type="text" id="hinta" name="hinta" placeholder="Ladataan…" disabled>
+        <p class="hint">Esim. "4e" tai "4€" — muoto siistitään automaattisesti.</p>
+      </fieldset>
+
+      <button type="submit" id="tarjous-submit-btn" disabled>Lähetä tarjous</button>
+      <p class="status" id="tarjous-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="danger-zone">
+      <p class="hint">Poistaa nykyisen tarjouksen käytöstä — se ei enää näy diginäytöllä.</p>
+      <button type="button" id="clear-btn" class="btn-danger">Poista tarjous</button>
+      <p class="status" id="clear-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
 
   <footer>
     <div class="logotype">Elävä Bistro</div>
@@ -201,31 +305,54 @@
 </main>
 
 <script>
-  // TODO: korvaa tämä oikealla Make.com-webhookin URL:lla, kun se on saatavilla.
-  // Voit myös yliajaa sen tilapäisesti osoiterivillä: index.html?webhook=https://hook.eu2.make.com/...
+  // TODO: nämä on jo asetettu oikeisiin Make.com-webhookeihin. Voit yliajaa
+  // ne tilapäisesti osoiterivillä: index.html?menuWebhook=...&tarjousWebhook=...
   const CONFIG = {
-    webhookUrl: 'https://hook.eu1.make.com/vjhss7c330rf356u774o6ehhkdcl3jan'
+    menuWebhookUrl: 'https://hook.eu1.make.com/vjhss7c330rf356u774o6ehhkdcl3jan',
+    tarjousWebhookUrl: 'https://hook.eu1.make.com/rj7ajejygkgptuz94siv7cvyxjkaxcre'
   };
 
-  (function applyWebhookOverride() {
+  (function applyWebhookOverrides() {
     const params = new URLSearchParams(window.location.search);
-    const override = params.get('webhook');
-    if (override) CONFIG.webhookUrl = override;
+    const menuOverride = params.get('menuWebhook');
+    const tarjousOverride = params.get('tarjousWebhook');
+    if (menuOverride) CONFIG.menuWebhookUrl = menuOverride;
+    if (tarjousOverride) CONFIG.tarjousWebhookUrl = tarjousOverride;
   })();
 
-  const CATEGORIES = [
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  // ----------------------- Välilehtien vaihto -----------------------
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      tabButtons.forEach(b => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('.tab-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === 'panel-' + target);
+      });
+    });
+  });
+
+  // ----------------------- MENU-lomake -----------------------
+  const MENU_CATEGORIES = [
     { label: 'Suolaista', id: 'cat-suolaista' },
     { label: 'Makeaa', id: 'cat-makeaa' },
     { label: 'Kuumat juomat', id: 'cat-kuumat' },
     { label: 'Kylmät juomat', id: 'cat-kylmat' }
   ];
 
-  const form = document.getElementById('menu-form');
-  const button = document.getElementById('submit-btn');
-  const status = document.getElementById('status');
+  const menuForm = document.getElementById('menu-form');
+  const menuButton = document.getElementById('menu-submit-btn');
+  const menuStatus = document.getElementById('menu-status');
+  const menuLoadStatus = document.getElementById('menu-load-status');
 
-  function buildRawText() {
-    return CATEGORIES
+  function buildRawMenuText() {
+    return MENU_CATEGORIES
       .map(cat => {
         const el = document.getElementById(cat.id);
         const body = el.value.trim();
@@ -235,24 +362,16 @@
       .join('\n\n');
   }
 
-  function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-  }
-
-  const loadStatus = document.getElementById('load-status');
-
-  function setFieldsEnabled(enabled) {
-    CATEGORIES.forEach(cat => {
+  function setMenuFieldsEnabled(enabled) {
+    MENU_CATEGORIES.forEach(cat => {
       document.getElementById(cat.id).disabled = !enabled;
     });
-    button.disabled = !enabled;
+    menuButton.disabled = !enabled;
   }
 
   async function loadCurrentMenu() {
-    loadStatus.textContent = 'Ladataan nykyistä menua…';
-    loadStatus.className = 'load-status';
+    menuLoadStatus.textContent = 'Ladataan nykyistä menua…';
+    menuLoadStatus.className = 'load-status';
 
     try {
       // file:// avattuna selain estää tämän hakemisen (CORS) — sivu on aina
@@ -265,7 +384,7 @@
       const byName = {};
       (data.categories || []).forEach(c => { byName[c.name] = c; });
 
-      CATEGORIES.forEach(cat => {
+      MENU_CATEGORIES.forEach(cat => {
         const found = byName[cat.label];
         const el = document.getElementById(cat.id);
         if (!found || !Array.isArray(found.items)) {
@@ -284,39 +403,36 @@
           .join('\n');
       });
 
-      setFieldsEnabled(true);
-      loadStatus.textContent = 'Nykyinen menu ladattu.';
-      loadStatus.className = 'load-status ok';
+      setMenuFieldsEnabled(true);
+      menuLoadStatus.textContent = 'Nykyinen menu ladattu.';
+      menuLoadStatus.className = 'load-status ok';
     } catch (err) {
-      // Ei jätetä kenttiin vanhaa esimerkkisisältöä — se voisi näyttää
-      // aidolta menulta, vaikka data ei olisikaan ajan tasalla. Kentät
-      // pysyvät tyhjinä ja lukittuina kunnes lataus onnistuu.
       console.error('Nykyisen menun haku epäonnistui:', err);
-      loadStatus.innerHTML = 'Menua ei saatu ladattua (' + escapeHtml(err.message) + '). Tarkista, että sivu on avattu netistä eikä paikallisena tiedostona, ja yritä uudelleen. <button type="button" class="retry-btn" id="retry-load-btn">Yritä uudelleen</button>';
-      loadStatus.className = 'load-status err';
-      const retryBtn = document.getElementById('retry-load-btn');
+      menuLoadStatus.innerHTML = 'Menua ei saatu ladattua (' + escapeHtml(err.message) + '). Tarkista, että sivu on avattu netistä eikä paikallisena tiedostona, ja yritä uudelleen. <button type="button" class="retry-btn" id="retry-menu-btn">Yritä uudelleen</button>';
+      menuLoadStatus.className = 'load-status err';
+      const retryBtn = document.getElementById('retry-menu-btn');
       if (retryBtn) retryBtn.addEventListener('click', loadCurrentMenu);
     }
   }
 
-  form.addEventListener('submit', async (event) => {
+  menuForm.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    if (!CONFIG.webhookUrl || CONFIG.webhookUrl === 'REPLACE_WITH_YOUR_MAKE_WEBHOOK_URL') {
-      status.textContent = 'Webhook-URL:ia ei ole vielä asetettu (katso CONFIG.webhookUrl index.html:ssä).';
-      status.className = 'status err';
+    if (!CONFIG.menuWebhookUrl) {
+      menuStatus.textContent = 'Webhook-URL:ia ei ole asetettu (katso CONFIG.menuWebhookUrl).';
+      menuStatus.className = 'status err';
       return;
     }
 
-    const text = buildRawText();
+    const text = buildRawMenuText();
     if (!text) return;
 
-    button.disabled = true;
-    status.textContent = 'Lähetetään…';
-    status.className = 'status';
+    menuButton.disabled = true;
+    menuStatus.textContent = 'Lähetetään…';
+    menuStatus.className = 'status';
 
     try {
-      const res = await fetch(CONFIG.webhookUrl, {
+      const res = await fetch(CONFIG.menuWebhookUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text })
@@ -324,18 +440,156 @@
 
       if (!res.ok) throw new Error('Palvelin vastasi virheellä (HTTP ' + res.status + ')');
 
-      status.textContent = 'Menu lähetetty! Päivitys näkyy diginäytöllä hetken kuluttua.';
-      status.className = 'status ok';
+      menuStatus.textContent = 'Menu lähetetty! Päivitys näkyy diginäytöllä hetken kuluttua.';
+      menuStatus.className = 'status ok';
     } catch (err) {
-      status.textContent = 'Lähetys epäonnistui: ' + err.message;
-      status.className = 'status err';
+      menuStatus.textContent = 'Lähetys epäonnistui: ' + err.message;
+      menuStatus.className = 'status err';
       console.error(err);
     } finally {
-      button.disabled = false;
+      menuButton.disabled = false;
+    }
+  });
+
+  // ----------------------- TARJOUS-lomake -----------------------
+  const tarjousForm = document.getElementById('tarjous-form');
+  const tuoteField = document.getElementById('tuote');
+  const hintaField = document.getElementById('hinta');
+  const tarjousButton = document.getElementById('tarjous-submit-btn');
+  const tarjousStatus = document.getElementById('tarjous-status');
+  const tarjousLoadStatus = document.getElementById('tarjous-load-status');
+
+  function setTarjousFieldsEnabled(enabled) {
+    tuoteField.disabled = !enabled;
+    hintaField.disabled = !enabled;
+    tarjousButton.disabled = !enabled;
+  }
+
+  async function loadCurrentOffer() {
+    tarjousLoadStatus.textContent = 'Ladataan nykyistä tarjousta…';
+    tarjousLoadStatus.className = 'load-status';
+
+    try {
+      const res = await fetch('tarjous.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('tarjous.json ei latautunut (HTTP ' + res.status + ')');
+      const data = await res.json();
+
+      tuoteField.value = (data.product || '').trim();
+      hintaField.value = (data.price || '').trim();
+
+      setTarjousFieldsEnabled(true);
+      tarjousLoadStatus.textContent = 'Nykyinen tarjous ladattu.';
+      tarjousLoadStatus.className = 'load-status ok';
+    } catch (err) {
+      console.error('Nykyisen tarjouksen haku epäonnistui:', err);
+      tarjousLoadStatus.innerHTML = 'Tarjousta ei saatu ladattua (' + escapeHtml(err.message) + '). Tarkista, että sivu on avattu netistä eikä paikallisena tiedostona, ja yritä uudelleen. <button type="button" class="retry-btn" id="retry-tarjous-btn">Yritä uudelleen</button>';
+      tarjousLoadStatus.className = 'load-status err';
+      const retryBtn = document.getElementById('retry-tarjous-btn');
+      if (retryBtn) retryBtn.addEventListener('click', loadCurrentOffer);
+    }
+  }
+
+  tarjousForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!CONFIG.tarjousWebhookUrl) {
+      tarjousStatus.textContent = 'Webhook-URL:ia ei ole asetettu (katso CONFIG.tarjousWebhookUrl).';
+      tarjousStatus.className = 'status err';
+      return;
+    }
+
+    const product = tuoteField.value.trim();
+    const price = hintaField.value.trim();
+    if (!product || !price) return;
+
+    tarjousButton.disabled = true;
+    tarjousStatus.textContent = 'Lähetetään…';
+    tarjousStatus.className = 'status';
+
+    try {
+      const res = await fetch(CONFIG.tarjousWebhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ product, price })
+      });
+
+      if (!res.ok) throw new Error('Palvelin vastasi virheellä (HTTP ' + res.status + ')');
+
+      tarjousStatus.textContent = 'Tarjous lähetetty! Päivitys näkyy diginäytöllä hetken kuluttua.';
+      tarjousStatus.className = 'status ok';
+    } catch (err) {
+      tarjousStatus.textContent = 'Lähetys epäonnistui: ' + err.message;
+      tarjousStatus.className = 'status err';
+      console.error(err);
+    } finally {
+      tarjousButton.disabled = false;
+    }
+  });
+
+  // ----------------------- Tarjouksen poisto -----------------------
+  // Kaksivaiheinen vahvistus ilman selaimen omaa confirm()-dialogia:
+  // ensimmäinen klikkaus "virittää" napin, toinen klikkaus 4 sekunnin
+  // sisällä lähettää poiston. Jos vahvistusta ei tule, nappi palautuu.
+  const clearBtn = document.getElementById('clear-btn');
+  const clearStatus = document.getElementById('clear-status');
+  let clearArmed = false;
+  let clearArmTimer = null;
+
+  function disarmClearButton() {
+    clearArmed = false;
+    clearBtn.textContent = 'Poista tarjous';
+    clearBtn.classList.remove('armed');
+    if (clearArmTimer) {
+      clearTimeout(clearArmTimer);
+      clearArmTimer = null;
+    }
+  }
+
+  clearBtn.addEventListener('click', async () => {
+    if (!clearArmed) {
+      clearArmed = true;
+      clearBtn.textContent = 'Vahvista poisto?';
+      clearBtn.classList.add('armed');
+      clearArmTimer = setTimeout(disarmClearButton, 4000);
+      return;
+    }
+
+    disarmClearButton();
+
+    if (!CONFIG.tarjousWebhookUrl) {
+      clearStatus.textContent = 'Webhook-URL:ia ei ole asetettu (katso CONFIG.tarjousWebhookUrl).';
+      clearStatus.className = 'status err';
+      return;
+    }
+
+    clearBtn.disabled = true;
+    clearStatus.textContent = 'Poistetaan…';
+    clearStatus.className = 'status';
+
+    try {
+      const res = await fetch(CONFIG.tarjousWebhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ clear: true })
+      });
+
+      if (!res.ok) throw new Error('Palvelin vastasi virheellä (HTTP ' + res.status + ')');
+
+      clearStatus.textContent = 'Tarjous poistettu käytöstä.';
+      clearStatus.className = 'status ok';
+      tuoteField.value = '';
+      hintaField.value = '';
+    } catch (err) {
+      clearStatus.textContent = 'Poisto epäonnistui: ' + err.message;
+      clearStatus.className = 'status err';
+      console.error(err);
+    } finally {
+      clearBtn.disabled = false;
     }
   });
 
   loadCurrentMenu();
+  loadCurrentOffer();
 </script>
 </body>
 </html>
