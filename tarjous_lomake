@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elävä Bistro – Päivän tarjous</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #C5D8AF;
+    --green: #00774A;
+    --ink: #00774A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    color: var(--green);
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+
+  p.subtitle {
+    margin: 0 0 32px;
+    opacity: 0.8;
+    line-height: 1.5;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0 0 24px;
+    padding: 0;
+  }
+
+  label {
+    display: block;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  textarea, input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+
+  textarea:focus, input[type="text"]:focus {
+    outline: 3px solid #00774A55;
+    outline-offset: 2px;
+  }
+
+  .hint {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin: 8px 0 0;
+    line-height: 1.4;
+  }
+
+  button {
+    margin-top: 8px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #fff;
+    background: var(--green);
+    border: none;
+    border-radius: 10px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+
+  button:hover { opacity: 0.9; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .status {
+    margin-top: 20px;
+    font-weight: 600;
+    min-height: 1.4em;
+  }
+
+  .status.ok { color: var(--green); }
+  .status.err { color: #9c2b2b; }
+
+  .load-status {
+    font-weight: 600;
+    margin: 0 0 24px;
+    color: var(--green);
+  }
+
+  .load-status.err {
+    color: #9c2b2b;
+  }
+
+  .load-status .retry-btn {
+    margin-left: 10px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #9c2b2b;
+    background: none;
+    border: 2px solid #9c2b2b;
+    border-radius: 8px;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+
+  textarea:disabled, input[type="text"]:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+
+  footer {
+    margin-top: 56px;
+    text-align: center;
+  }
+
+  .logotype {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    color: var(--green);
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Päivän tarjous</h1>
+  <p class="subtitle">
+    Kirjoita tämänhetkinen tarjous. Kirjoitusvirheet ja epäsiisti muotoilu
+    eivät haittaa, ne siistitään automaattisesti.
+  </p>
+
+  <p class="load-status" id="load-status" role="status" aria-live="polite">Ladataan nykyistä tarjousta…</p>
+
+  <form id="tarjous-form">
+    <fieldset>
+      <label for="tuote">Tuote</label>
+      <textarea id="tuote" name="tuote" placeholder="Ladataan…" disabled></textarea>
+      <p class="hint">Esim. "Itsetehtyä omenapiirakkaa ja kahvi"</p>
+    </fieldset>
+
+    <fieldset>
+      <label for="hinta">Hinta</label>
+      <input type="text" id="hinta" name="hinta" placeholder="Ladataan…" disabled>
+      <p class="hint">Esim. "4e" tai "4€" — muoto siistitään automaattisesti.</p>
+    </fieldset>
+
+    <button type="submit" id="submit-btn" disabled>Lähetä tarjous</button>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </form>
+
+  <footer>
+    <div class="logotype">Elävä Bistro</div>
+  </footer>
+</main>
+
+<script>
+  // TODO: korvaa tämä oikealla Make.com-webhookin URL:lla, kun se on saatavilla.
+  // Voit myös yliajaa sen tilapäisesti osoiterivillä: tarjous-lomake.html?webhook=https://hook.eu2.make.com/...
+  const CONFIG = {
+    webhookUrl: 'REPLACE_WITH_YOUR_TARJOUS_WEBHOOK_URL'
+  };
+
+  (function applyWebhookOverride() {
+    const params = new URLSearchParams(window.location.search);
+    const override = params.get('webhook');
+    if (override) CONFIG.webhookUrl = override;
+  })();
+
+  const form = document.getElementById('tarjous-form');
+  const tuoteField = document.getElementById('tuote');
+  const hintaField = document.getElementById('hinta');
+  const button = document.getElementById('submit-btn');
+  const status = document.getElementById('status');
+  const loadStatus = document.getElementById('load-status');
+
+  function setFieldsEnabled(enabled) {
+    tuoteField.disabled = !enabled;
+    hintaField.disabled = !enabled;
+    button.disabled = !enabled;
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  async function loadCurrentOffer() {
+    loadStatus.textContent = 'Ladataan nykyistä tarjousta…';
+    loadStatus.className = 'load-status';
+
+    try {
+      // file:// avattuna selain estää tämän hakemisen (CORS) — sivu on aina
+      // avattava osoitteesta (esim. https://<tunnus>.github.io/elava-bistro-menu/),
+      // ei paikallisena tiedostona kaksoisnapauttamalla.
+      const res = await fetch('tarjous.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('tarjous.json ei latautunut (HTTP ' + res.status + ')');
+      const data = await res.json();
+
+      tuoteField.value = (data.product || '').trim();
+      hintaField.value = (data.price || '').trim();
+
+      setFieldsEnabled(true);
+      loadStatus.textContent = 'Nykyinen tarjous ladattu.';
+      loadStatus.className = 'load-status ok';
+    } catch (err) {
+      // Ei jätetä kenttiin vanhaa esimerkkisisältöä — se voisi näyttää
+      // ajantasaiselta, vaikka data ei olisikaan. Kentät pysyvät tyhjinä
+      // ja lukittuina kunnes lataus onnistuu.
+      console.error('Nykyisen tarjouksen haku epäonnistui:', err);
+      loadStatus.innerHTML = 'Tarjousta ei saatu ladattua (' + escapeHtml(err.message) + '). Tarkista, että sivu on avattu netistä eikä paikallisena tiedostona, ja yritä uudelleen. <button type="button" class="retry-btn" id="retry-load-btn">Yritä uudelleen</button>';
+      loadStatus.className = 'load-status err';
+      const retryBtn = document.getElementById('retry-load-btn');
+      if (retryBtn) retryBtn.addEventListener('click', loadCurrentOffer);
+    }
+  }
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (!CONFIG.webhookUrl || CONFIG.webhookUrl === 'REPLACE_WITH_YOUR_TARJOUS_WEBHOOK_URL') {
+      status.textContent = 'Webhook-URL:ia ei ole vielä asetettu (katso CONFIG.webhookUrl tarjous-lomake.html:ssä).';
+      status.className = 'status err';
+      return;
+    }
+
+    const product = tuoteField.value.trim();
+    const price = hintaField.value.trim();
+    if (!product || !price) return;
+
+    button.disabled = true;
+    status.textContent = 'Lähetetään…';
+    status.className = 'status';
+
+    try {
+      const res = await fetch(CONFIG.webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ product, price })
+      });
+
+      if (!res.ok) throw new Error('Palvelin vastasi virheellä (HTTP ' + res.status + ')');
+
+      status.textContent = 'Tarjous lähetetty! Päivitys näkyy diginäytöllä hetken kuluttua.';
+      status.className = 'status ok';
+    } catch (err) {
+      status.textContent = 'Lähetys epäonnistui: ' + err.message;
+      status.className = 'status err';
+      console.error(err);
+    } finally {
+      button.disabled = false;
+    }
+  });
+
+  loadCurrentOffer();
+</script>
+</body>
+</html>
