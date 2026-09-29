@@ -21,11 +21,6 @@
           "price": "3,00€"
         },
         {
-          "name": "Talon kinkku-kasvispiirakka (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
           "name": "Croissant (kinkku-juusto)",
           "badges": ["L"],
           "price": "3,50€"
@@ -56,7 +51,7 @@
           "price": "3,00€"
         },
         {
-          "name": "Sitruunaposset, kermavanukas",
+          "name": "Sitruuna Posset, kermavanukas",
           "badges": ["L"],
           "price": "1,50€"
         }
