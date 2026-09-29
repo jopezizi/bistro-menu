@@ -19,6 +19,11 @@
           "name": "Croissant (kinkku-juusto)",
           "badges": ["L"],
           "price": "3,50€"
+        },
+        {
+          "name": "Pizzaleipä: Pekoni & portobello",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -46,7 +51,7 @@
           "price": "3,00€"
         },
         {
-          "name": "Sitruuna Posset, kermavanukas",
+          "name": "Sitruunaposset, kermavanukas",
           "badges": ["L"],
           "price": "1,50€"
         }
