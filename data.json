@@ -6,17 +6,12 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Talon kasvispiirakka",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
           "name": "Kana- tai kasvispiirakka",
           "badges": ["L", "G"],
           "price": "3,00€"
         },
         {
-          "name": "Croissant (kinkku-juusto)",
+          "name": "Croissant (juusto & kurkku)",
           "badges": ["L"],
           "price": "3,50€"
         },
@@ -24,6 +19,11 @@
           "name": "Pizzaleipä: Pekoni & portobello",
           "badges": [],
           "price": "4,00€"
+        },
+        {
+          "name": "Pestokierre",
+          "badges": ["VEG"],
+          "price": "0,50€"
         }
       ]
     },
@@ -38,7 +38,7 @@
         {
           "name": "Munkkirinkilä",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
