@@ -11,19 +11,24 @@
           "price": "3,00€"
         },
         {
-          "name": "Croissant (juusto & kurkku)",
+          "name": "Scacciata: tomaatti-pesto-Mozzarella",
+          "badges": [],
+          "price": "3,50€"
+        },
+        {
+          "name": "Pizzaleipä: Pekoni & portobello (eilinen)",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Bistron Nyhtöpossupiirakka",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Pizzaleipä: Pekoni & portobello",
-          "badges": [],
-          "price": "4,00€"
-        },
-        {
-          "name": "Pestokierre",
-          "badges": ["VEG"],
-          "price": "0,50€"
+          "name": "Talon Nakkipiilo - spicy tarjous",
+          "badges": ["L"],
+          "price": "2,50€"
         }
       ]
     },
@@ -36,9 +41,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Munkkirinkilä (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
