@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
@@ -54,6 +54,11 @@
           "name": "Sitruunaposset, kermavanukas",
           "badges": ["L"],
           "price": "1,00€"
+        },
+        {
+          "name": "Mansikka-vaniljacroissant",
+          "badges": ["L"],
+          "price": "3,00€"
         }
       ]
     },
