@@ -1,6 +1,6 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
@@ -11,14 +11,14 @@
           "price": "3,00€"
         },
         {
-          "name": "Scacciata: tomaatti-pesto-mozzarella",
+          "name": "Scacciata: tomaatti-pesto-mozzarella (eilinen)",
           "badges": [],
-          "price": "3,50€"
+          "price": "2,00€"
         },
         {
-          "name": "Pizzaleipä: Pekoni & portobello (eilinen)",
+          "name": "Bistron Seitan-kasvispiirakka",
           "badges": [],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
           "name": "Bistron Nyhtöpossupiirakka",
@@ -26,9 +26,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Talon Nakkipiilo - spicy (tarjous)",
+          "name": "Talon Nakkipiilo - spicy",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,00€"
         }
       ]
     },
@@ -36,14 +36,14 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon omenapiirakka",
+          "name": "Suklaamokkapala",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Munkkirinkeli (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
@@ -53,7 +53,7 @@
         {
           "name": "Sitruunaposset, kermavanukas",
           "badges": ["L"],
-          "price": "1,50€"
+          "price": "1,00€"
         }
       ]
     },
