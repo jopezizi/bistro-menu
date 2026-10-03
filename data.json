@@ -23,7 +23,12 @@
         {
           "name": "Talon Nakkipiilo - spicy",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "3,50€"
+        },
+        {
+          "name": "Calzone (kinkku-juusto)",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -33,7 +38,17 @@
         {
           "name": "Suklaamokkapala",
           "badges": ["L"],
+          "price": "1,50€"
+        },
+        {
+          "name": "Omenamunkki",
+          "badges": ["L"],
           "price": "3,50€"
+        },
+        {
+          "name": "Munkkirinkilä",
+          "badges": ["L"],
+          "price": "3,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
