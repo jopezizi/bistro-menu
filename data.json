@@ -21,14 +21,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Talon Nakkipiilo - spicy",
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Calzone (kinkku-juusto)",
-          "badges": [],
-          "price": "4,00€"
+          "name": "Croissant",
+          "badges": ["L"],
+          "price": "2,00€"
         }
       ]
     },
@@ -41,14 +41,19 @@
           "price": "1,50€"
         },
         {
-          "name": "Omarmunkki",
+          "name": "Talon omenapiirakka",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Munkkirinkilä",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "1,50€"
+        },
+        {
+          "name": "Minimunkki biscoff-täytteellä",
+          "badges": [],
+          "price": "1,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
