@@ -11,24 +11,24 @@
           "price": "3,00€"
         },
         {
-          "name": "Bistron Seitan-kasvispiirakka",
-          "badges": [],
-          "price": "3,50€"
-        },
-        {
-          "name": "Bistron Nyhtöpossupiirakka",
+          "name": "Bistron kasvispiirakka",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku tai juusto)",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Croissant",
+          "name": "Bistron nyhtöpossupiirakka (eilinen)",
           "badges": ["L"],
           "price": "2,00€"
+        },
+        {
+          "name": "Täytetty croissant (kinkku-juusto)",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Pizzaleipä (mozzarella-kinkku)",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -36,22 +36,22 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Suklaamokkapala",
-          "badges": ["L"],
-          "price": "1,50€"
-        },
-        {
           "name": "Talon omenapiirakka",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "3,50€"
         },
         {
           "name": "Munkkirinkilä",
           "badges": ["L"],
-          "price": "1,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Minimunkki biscoff-täytteellä",
+          "name": "Korvapuusti",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Minimunkki Biscoff-täytteellä",
           "badges": [],
           "price": "1,00€"
         },
