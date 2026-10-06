@@ -6,29 +6,24 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Kana- tai kasvispiirakka",
-          "badges": ["L", "G"],
-          "price": "3,00€"
-        },
-        {
           "name": "Bistron kasvispiirakka",
           "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Bistron nyhtöpossupiirakka (eilinen)",
+          "name": "Täytetty kasvissämpylä",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
-          "name": "Täytetty croissant (kinkku-juusto)",
+          "name": "Muna-anjovisleipä",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Pizzaleipä (mozzarella-kinkku)",
+          "name": "Pizzaleipä (mozzarella-kinkku) (eilinen)",
           "badges": [],
-          "price": "4,00€"
+          "price": "2,00€"
         }
       ]
     },
@@ -54,11 +49,6 @@
           "name": "Minimunkki Biscoff-täytteellä",
           "badges": [],
           "price": "1,00€"
-        },
-        {
-          "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
-          "price": "3,00€"
         }
       ]
     },
