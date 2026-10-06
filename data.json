@@ -24,6 +24,11 @@
           "name": "Pizzaleipä (mozzarella-kinkku) (eilinen)",
           "badges": [],
           "price": "2,00€"
+        },
+        {
+          "name": "Pizzaslice (nyhtöpossu, paprika, tomaatti)",
+          "badges": ["L"],
+          "price": "3,00€"
         }
       ]
     },
