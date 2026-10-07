@@ -11,24 +11,24 @@
           "price": "3,00€"
         },
         {
-          "name": "Täytetty kasvissämpylä",
+          "name": "Bistron nyhtöpossupiirakka",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "3,50€"
+        },
+        {
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
+          "badges": ["L"],
+          "price": "3,50€"
         },
         {
           "name": "Muna-anjovisleipä",
           "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Pizzaleipä (mozzarella-kinkku) (eilinen)",
-          "badges": [],
-          "price": "2,00€"
+          "price": "2,50€"
         },
         {
           "name": "Pizzaslice (nyhtöpossu, paprika, tomaatti)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         }
       ]
     },
@@ -38,17 +38,17 @@
         {
           "name": "Talon omenapiirakka",
           "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Omar-munkki",
+          "badges": ["L"],
           "price": "3,50€"
-        },
-        {
-          "name": "Munkkirinkilä",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Korvapuusti",
-          "badges": ["L"],
-          "price": "3,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
