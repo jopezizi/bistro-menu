@@ -16,19 +16,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku tai juusto)",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Muna-anjovisleipä",
+          "name": "Täytetty sämpylä (kinkku tai juusto) (eilinen)",
           "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Pizzaslice (nyhtöpossu, paprika, tomaatti)",
+          "name": "Muna-anjovisleipä (eilinen)",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "2,00€"
         }
       ]
     },
@@ -38,12 +33,12 @@
         {
           "name": "Talon omenapiirakka",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Voisilmäpulla",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Omar-munkki",
