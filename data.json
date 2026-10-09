@@ -16,14 +16,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku tai juusto) (eilinen)",
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
-          "name": "Muna-anjovisleipä (eilinen)",
-          "badges": ["L"],
-          "price": "2,00€"
+          "name": "Pizzaleipä (pekoni-portobello)",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -31,19 +31,19 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon omenapiirakka",
-          "badges": ["L"],
-          "price": "2,00€"
-        },
-        {
-          "name": "Voisilmäpulla",
-          "badges": ["L"],
-          "price": "2,00€"
-        },
-        {
-          "name": "Omar-munkki",
+          "name": "Talon mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
           "price": "3,50€"
+        },
+        {
+          "name": "Korvapuusti",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Munkkirinkilä",
+          "badges": ["L"],
+          "price": "3,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
