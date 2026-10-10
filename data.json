@@ -13,17 +13,17 @@
         {
           "name": "Bistron nyhtöpossupiirakka",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Pizzaleipä (pekoni-portobello)",
           "badges": [],
-          "price": "4,00€"
+          "price": "3,00€"
         }
       ]
     },
@@ -38,12 +38,7 @@
         {
           "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Munkkirinkilä",
-          "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
