@@ -11,8 +11,18 @@
           "price": "3,00€"
         },
         {
-          "name": "Bistron nyhtöpossupiirakka",
+          "name": "Calzone (kinkku-juusto)",
+          "badges": [],
+          "price": "4,00€"
+        },
+        {
+          "name": "Croissant (ilmakuivattu kinkku)",
           "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Kana- / kasvispiiras",
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
@@ -29,6 +39,16 @@
           "name": "Minimunkki Biscoff-täytteellä",
           "badges": [],
           "price": "1,00€"
+        },
+        {
+          "name": "Croissant (mansikka-vanilja)",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
+          "price": "3,00€"
         }
       ]
     },
