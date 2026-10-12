@@ -13,7 +13,7 @@
         {
           "name": "Calzone (kinkku-juusto)",
           "badges": [],
-          "price": "4,00€"
+          "price": "2,50€"
         },
         {
           "name": "Croissant (ilmakuivattu kinkku)",
@@ -34,11 +34,6 @@
           "name": "Talon mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
           "price": "3,50€"
-        },
-        {
-          "name": "Minimunkki Biscoff-täytteellä",
-          "badges": [],
-          "price": "1,00€"
         },
         {
           "name": "Croissant (mansikka-vanilja)",
