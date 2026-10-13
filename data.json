@@ -11,14 +11,19 @@
           "price": "3,00€"
         },
         {
+          "name": "Nakkipiilo",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
           "name": "Pizza slice",
           "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Croissant (ilmakuivattu kinkku)",
+          "name": "Slider (mini burger)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "4,50€"
         },
         {
           "name": "Kana- / kasvispiiras",
@@ -36,14 +41,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Croissant (mansikka-vanilja)",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Voisilmäpulla",
+          "name": "Munkkirinkeli",
           "badges": ["L"],
           "price": "3,00€"
+        },
+        {
+          "name": "Voisilmäpulla (eilinen)",
+          "badges": ["L"],
+          "price": "2,00€"
         }
       ]
     },
