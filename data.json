@@ -13,22 +13,17 @@
         {
           "name": "Nakkipiilo",
           "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Pizza slice",
-          "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Slider (mini burger)",
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
-          "price": "4,50€"
+          "price": "3,50€"
         },
         {
-          "name": "Kana- / kasvispiiras",
-          "badges": ["L", "G"],
-          "price": "3,00€"
+          "name": "Miniburgeri",
+          "badges": ["L"],
+          "price": "4,50€"
         }
       ]
     },
@@ -38,7 +33,7 @@
         {
           "name": "Talon mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Munkkirinkeli",
@@ -46,9 +41,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Voisilmäpulla (eilinen)",
+          "name": "Kampaviineri",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         }
       ]
     },
