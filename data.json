@@ -11,14 +11,19 @@
           "price": "3,00€"
         },
         {
-          "name": "Nakkipiilo",
+          "name": "Bistron nyhtöpossupiirakka",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
-          "name": "Miniburgeri",
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
-          "price": "4,50€"
+          "price": "3,50€"
+        },
+        {
+          "name": "Pizzaslice",
+          "badges": ["L"],
+          "price": "3,00€"
         }
       ]
     },
@@ -36,9 +41,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Kampaviineri",
+          "name": "Kampaviineri (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         }
       ]
     },
