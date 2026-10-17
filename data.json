@@ -6,24 +6,24 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron kasvispiirakka",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
           "name": "Bistron nyhtöpossupiirakka",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Täytetty croissant (kinkku tai juusto)",
+          "name": "Täytetty croissant (eilinen)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         },
         {
           "name": "Pizzaslice",
           "badges": ["L"],
           "price": "2,50€"
+        },
+        {
+          "name": "Täytetty patonki (juusto-kasvis)",
+          "badges": ["L"],
+          "price": "4,00€"
         }
       ]
     },
