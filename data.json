@@ -6,7 +6,7 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron tonnikala-kinkkupiirakka",
+          "name": "Bistron tonnikala- tai kinkkupiirakka",
           "badges": ["L"],
           "price": "3,00€"
         },
@@ -16,19 +16,14 @@
           "price": "3,00€"
         },
         {
-          "name": "Pizzaviipale",
+          "name": "Pizzaslice",
           "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Muna-anjovisleipä",
+          "name": "Täytetty patonki (juusto & kinkku)",
           "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Kana-/kasvispiiras",
-          "badges": ["L", "G"],
-          "price": "3,00€"
+          "price": "4,00€"
         }
       ]
     },
@@ -41,9 +36,14 @@
           "price": "3,00€"
         },
         {
+          "name": "Minimunkki Biscoff-täytteellä",
+          "badges": [],
+          "price": "1,00€"
+        },
+        {
           "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
