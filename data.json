@@ -8,12 +8,12 @@
         {
           "name": "Bistro kasvispiirakka",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
         },
         {
           "name": "Bistron kinkku-tonnikalapiirakka",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Täytetty sämpylä (juusto tai kinkku)",
@@ -21,9 +21,14 @@
           "price": "3,50€"
         },
         {
-          "name": "Kinkku-juustocalzone",
+          "name": "Kinkku-juustocalzone (eilinen)",
           "badges": [],
-          "price": "4,00€"
+          "price": "3,00€"
+        },
+        {
+          "name": "Pizzaslice (pepperoni, paprika)",
+          "badges": ["L"],
+          "price": "2,50€"
         }
       ]
     },
@@ -34,11 +39,6 @@
           "name": "Talon mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
           "price": "3,50€"
-        },
-        {
-          "name": "Munkkirinkeli",
-          "badges": ["L"],
-          "price": "3,00€"
         },
         {
           "name": "Korvapuusti",
