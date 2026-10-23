@@ -6,12 +6,12 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistro kasvispiirakka",
+          "name": "Bistron kasvis-seitanpiirakka",
           "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Bistron kinkku-tonnikalapiirakka",
+          "name": "Bistron suolainen piirakka",
           "badges": ["L"],
           "price": "3,00€"
         },
@@ -21,9 +21,9 @@
           "price": "3,50€"
         },
         {
-          "name": "Kinkku-juustocalzone (eilinen)",
+          "name": "Pizzaleipä (kinkku-mozzarella)",
           "badges": [],
-          "price": "3,00€"
+          "price": "4,00€"
         },
         {
           "name": "Pizzaslice (pepperoni, paprika)",
@@ -42,6 +42,11 @@
         },
         {
           "name": "Korvapuusti",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Munkkirinkilä",
           "badges": ["L"],
           "price": "3,00€"
         },
