@@ -5,91 +5,36 @@
     {
       "name": "Suolaista",
       "items": [
-        {
-          "name": "Bistron kasvis-seitanpiirakka",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
-          "name": "Bistron suolainen piirakka",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Täytetty sämpylä (juusto tai kinkku)",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Pizzaleipä (kinkku-mozzarella)",
-          "badges": [],
-          "price": "4,00€"
-        },
-        {
-          "name": "Pizzaslice (pepperoni, paprika)",
-          "badges": ["L"],
-          "price": "2,50€"
-        }
+        { "name": "Bistron kinkkupiirakka", "badges": ["L"], "price": "3,00€" },
+        { "name": "Bistron seitan-kasvispiirakka", "badges": ["L"], "price": "3,00€" },
+        { "name": "Pizza sandwich: kinkku-juusto", "badges": ["L"], "price": "4,00€" },
+        { "name": "Pizzaleipä (eilinen)", "badges": ["L"], "price": "3,00€" },
+        { "name": "Juustosämpylä (eilinen)", "badges": ["L"], "price": "2,50€" },
+        { "name": "Kana-/kasvispiiras", "badges": ["L", "G"], "price": "3,00€" }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        {
-          "name": "Talon mustikkapiirakka ja vaniljakastike",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
-          "name": "Korvapuusti",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Munkkirinkilä",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Suklaadonitsi",
-          "badges": [],
-          "price": "2,00€"
-        }
+        { "name": "Talon mansikkapiirakka", "badges": ["L"], "price": "3,00€" },
+        { "name": "Voisilmäpulla", "badges": ["L"], "price": "3,00€" },
+        { "name": "Minimunkki Biscoff-täytteellä", "badges": [], "price": "1,00€" },
+        { "name": "Mustaherukka-raparperipiirakka", "badges": ["L", "G"], "price": "3,00€" }
       ]
     },
     {
       "name": "Kuumat juomat",
       "items": [
-        {
-          "name": "Kahvi",
-          "badges": [],
-          "price": "2,00€"
-        },
-        {
-          "name": "Tee",
-          "badges": [],
-          "price": "1,50€"
-        }
+        { "name": "Kahvi", "badges": [], "price": "2,00€" },
+        { "name": "Tee", "badges": [], "price": "1,50€" }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        {
-          "name": "Virvoitusjuomat",
-          "badges": [],
-          "price": "3,00€"
-        },
-        {
-          "name": "Vichy",
-          "badges": [],
-          "price": "2,50€"
-        },
-        {
-          "name": "Pillimehu",
-          "badges": [],
-          "price": "1,50€"
-        }
+        { "name": "Virvoitusjuomat", "badges": [], "price": "3,00€" },
+        { "name": "Vichy", "badges": [], "price": "2,50€" },
+        { "name": "Pillimehu", "badges": [], "price": "1,50€" }
       ]
     }
   ]
