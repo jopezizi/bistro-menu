@@ -12,12 +12,9 @@
         },
         {
           "name": "Bistron seitan-kasvispiirakka",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Pizza sandwich : kinkku - juusto",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
@@ -27,7 +24,10 @@
         },
         {
           "name": "Kana-/kasvispiiras",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
@@ -37,12 +37,16 @@
       "items": [
         {
           "name": "Talon mansikkapiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
           "name": "Voisilmäpulla",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
@@ -52,7 +56,10 @@
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": ["L", "G"],
+          "badges": [
+            "L",
+            "G"
+          ],
           "price": "3,00€"
         }
       ]
