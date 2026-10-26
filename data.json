@@ -6,11 +6,6 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Croissant (kinkku / juusto)",
-          "badges": ["L"],
-          "price": "3,50€"
-        },
-        {
           "name": "Bistron seitan-kasvispiirakka",
           "badges": ["L"],
           "price": "3,00€"
