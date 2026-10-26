@@ -7,27 +7,27 @@
       "items": [
         {
           "name": "Croissant (kinkku / juusto)",
-          "badges": [],
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Bistron seitan-kasvispiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Pizzaleipä (kinkku)",
-          "badges": [],
+          "name": "Bistron pepperoni-kasvispiirakka",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Pizza Sandwich",
+          "badges": ["L"],
           "price": "4,00€"
         },
         {
           "name": "Kana-/kasvispiiras",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
@@ -37,17 +37,13 @@
       "items": [
         {
           "name": "Talon mansikkapiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Voisilmäpulla",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
+          "name": "Voisilmäpulla (eilinen)",
+          "badges": ["L"],
+          "price": "2,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
@@ -55,11 +51,13 @@
           "price": "1,00€"
         },
         {
+          "name": "Kampaviineri",
+          "badges": ["L"],
+          "price": "2,50€"
+        },
+        {
           "name": "Mustaherukka-raparperipiirakka",
-          "badges": [
-            "L",
-            "G"
-          ],
+          "badges": ["L", "G"],
           "price": "3,00€"
         }
       ]
