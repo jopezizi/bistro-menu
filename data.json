@@ -6,9 +6,9 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron seitan-kasvispiirakka",
+          "name": "Calzone: Savupaprika-juusto",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "3,50€"
         },
         {
           "name": "Bistron pepperoni-kasvispiirakka",
@@ -21,7 +21,7 @@
           "price": "4,00€"
         },
         {
-          "name": "Kanapiirakka",
+          "name": "Kana-/kasvispiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
         }
@@ -36,9 +36,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Voisilmäpulla (eilinen)",
+          "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
@@ -48,7 +48,7 @@
         {
           "name": "Kampaviineri",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "1,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
