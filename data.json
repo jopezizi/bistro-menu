@@ -6,19 +6,19 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Calzone: Savupaprika-juusto",
+          "name": "Bistron kinkkupiirakka",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Bistron pepperoni-kasvispiirakka",
+          "name": "Bistron kasvispiirakka",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
+          "name": "Croissant: juusto (eilinen)",
           "badges": ["L"],
           "price": "2,50€"
-        },
-        {
-          "name": "Croissant: juusto",
-          "badges": ["L"],
-          "price": "3,50€"
         },
         {
           "name": "Sämpylä: kinkku",
@@ -36,7 +36,7 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Talon mansikkapiirakka",
+          "name": "Talon mokkapala",
           "badges": ["L"],
           "price": "3,00€"
         },
@@ -51,9 +51,9 @@
           "price": "1,00€"
         },
         {
-          "name": "Voisilmäpulla",
+          "name": "Voisilmäpulla (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
