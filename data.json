@@ -16,14 +16,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Croissant: juusto (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
-          "name": "Sämpylä: kinkku",
+          "name": "Calzone; kinkku",
           "badges": [],
-          "price": "3,50€"
+          "price": "4,00€"
         },
         {
           "name": "Kana-/kasvispiiras",
@@ -41,9 +36,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Korvapuusti (eilinen)",
+          "name": "Munkkirinkeli",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
@@ -51,9 +46,9 @@
           "price": "1,00€"
         },
         {
-          "name": "Voisilmäpulla (eilinen)",
+          "name": "Bistron mustikkapiirakka & vaniljakastike",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,50€"
         },
         {
           "name": "Mustaherukka-raparperipiirakka",
