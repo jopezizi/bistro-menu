@@ -11,14 +11,19 @@
           "price": "2,50€"
         },
         {
-          "name": "Täytetty sämpylä (eilinen)(kinkku tai juusto)",
+          "name": "Bistron kinkkupiirakka",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Pizzaleipä (kinkku-mozzarella)",
+          "name": "Croissant",
+          "badges": ["VL"],
+          "price": "2,00€"
+        },
+        {
+          "name": "Pizzaleipä (kinkku-mozzarella) (eilinen)",
           "badges": [],
-          "price": "4,00€"
+          "price": "2,00€"
         }
       ]
     },
@@ -26,17 +31,22 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Halloweenkakkupala",
+          "name": "Mutakakkupala",
           "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Munkkirinkilä (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "1,00€"
         },
         {
           "name": "Mokkapala",
+          "badges": ["L"],
+          "price": "2,50€"
+        },
+        {
+          "name": "Mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
           "price": "2,50€"
         }
