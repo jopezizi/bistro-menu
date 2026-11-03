@@ -6,24 +6,19 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron kasvis-seitanpiirakka",
+          "name": "Bistron salami-paprikapiirakka",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
-          "name": "Bistron kinkkupiirakka",
-          "badges": ["L"],
-          "price": "3,00€"
-        },
-        {
-          "name": "Croissant",
-          "badges": ["VL"],
-          "price": "2,00€"
-        },
-        {
-          "name": "Pizzaleipä (kinkku-mozzarella) (eilinen)",
+          "name": "Croissant (eilinen)",
           "badges": [],
-          "price": "2,00€"
+          "price": "1,00€"
+        },
+        {
+          "name": "Kinkku-juustocalzone",
+          "badges": [],
+          "price": "4,00€"
         }
       ]
     },
@@ -34,11 +29,6 @@
           "name": "Mutakakkupala",
           "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Munkkirinkilä (eilinen)",
-          "badges": ["L"],
-          "price": "1,00€"
         },
         {
           "name": "Mokkapala",
