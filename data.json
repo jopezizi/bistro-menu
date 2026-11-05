@@ -5,33 +5,95 @@
     {
       "name": "Suolaista",
       "items": [
-        { "name": "Bistron salami-paprikapiirakka", "badges": ["L"], "price": "3,50€" },
-        { "name": "Täytetty sämpylä (kinkku tai juusto)", "badges": [], "price": "3,50€" },
-        { "name": "Kinkku-juustocalzone (eilinen)", "badges": [], "price": "2,00€" }
+        {
+          "name": "Bistron salami-paprikapiirakka",
+          "badges": [
+            "L"
+          ],
+          "price": "3,50€"
+        },
+        {
+          "name": "Täytetty sämpylä (eilinen) (kinkku tai juusto)",
+          "badges": [
+            "L"
+          ],
+          "price": "2,50€"
+        },
+        {
+          "name": "Pizzaviipale (kinkku-tomaatti)",
+          "badges": [
+            "L"
+          ],
+          "price": "2,50€"
+        }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        { "name": "Mokkapala", "badges": ["L"], "price": "2,50€" },
-        { "name": "Suklaadonitsi", "badges": ["L"], "price": "2,00€" },
-        { "name": "Munkkirinkilä", "badges": ["L"], "price": "3,00€" },
-        { "name": "Korvapuusti", "badges": ["L"], "price": "3,00€" }
+        {
+          "name": "Mokkapala",
+          "badges": [
+            "L"
+          ],
+          "price": "2,50€"
+        },
+        {
+          "name": "Suklaadonitsi",
+          "badges": [
+            "L"
+          ],
+          "price": "2,00€"
+        },
+        {
+          "name": "Munkkirinkilä (eilinen)",
+          "badges": [
+            "L"
+          ],
+          "price": "1,00€"
+        },
+        {
+          "name": "Korvapuusti",
+          "badges": [
+            "L"
+          ],
+          "price": "3,00€"
+        }
       ]
     },
     {
       "name": "Kuumat juomat",
       "items": [
-        { "name": "Kahvi", "badges": [], "price": "2,00€" },
-        { "name": "Tee", "badges": [], "price": "1,50€" }
+        {
+          "name": "Kahvi",
+          "badges": [],
+          "price": "2,00€"
+        },
+        {
+          "name": "Tee",
+          "badges": [],
+          "price": "1,50€"
+        }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        { "name": "Virvoitusjuomat", "badges": [], "price": "3,00€" },
-        { "name": "Vichy", "badges": [], "price": "2,50€" },
-        { "name": "Pillimehu", "badges": [], "price": "1,50€" }
+        {
+          "name": "Virvoitusjuomat",
+          "badges": [],
+          "price": "3,00€"
+        },
+        {
+          "name": "Vichy",
+          "badges": [],
+          "price": "2,50€"
+        },
+        {
+          "name": "Pillimehu",
+          "badges": [],
+          "price": "1,50€"
+        }
       ]
     }
   ]
