@@ -10,21 +10,21 @@
           "badges": [
             "L"
           ],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä (eilinen) (kinkku tai juusto)",
+          "name": "Täytetty sämpylä (juusto)",
           "badges": [
             "L"
           ],
           "price": "2,50€"
         },
         {
-          "name": "Pizzaviipale (kinkku-tomaatti)",
+          "name": "Pizza sandwich (kasvis + vegaaninen pepperoni)",
           "badges": [
             "L"
           ],
-          "price": "2,50€"
+          "price": "4,50€"
         }
       ]
     },
@@ -36,7 +36,7 @@
           "badges": [
             "L"
           ],
-          "price": "2,50€"
+          "price": "2,00€"
         },
         {
           "name": "Suklaadonitsi",
@@ -46,14 +46,7 @@
           "price": "2,00€"
         },
         {
-          "name": "Munkkirinkilä (eilinen)",
-          "badges": [
-            "L"
-          ],
-          "price": "1,00€"
-        },
-        {
-          "name": "Korvapuusti",
+          "name": "Munkkirinkilä",
           "badges": [
             "L"
           ],
