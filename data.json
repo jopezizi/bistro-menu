@@ -6,25 +6,19 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron salami-paprikapiirakka",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
-        },
-        {
-          "name": "Täytetty sämpylä (juusto)",
-          "badges": [
-            "L"
-          ],
+          "name": "Muna-anjovisleipä",
+          "badges": ["L"],
           "price": "2,50€"
         },
         {
-          "name": "Pizza sandwich (kasvis + vegaaninen pepperoni)",
-          "badges": [
-            "L"
-          ],
-          "price": "4,50€"
+          "name": "Täytetty sämpylä (kinkku)",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Kasvispiiras",
+          "badges": ["L", "G"],
+          "price": "3,00€"
         }
       ]
     },
@@ -32,25 +26,29 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Mokkapala",
-          "badges": [
-            "L"
-          ],
-          "price": "2,00€"
+          "name": "Vaniljamokkapala",
+          "badges": ["L"],
+          "price": "2,50€"
         },
         {
           "name": "Suklaadonitsi",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "2,00€"
         },
         {
-          "name": "Munkkirinkilä",
-          "badges": [
-            "L"
-          ],
+          "name": "Voisilmäpulla",
+          "badges": ["L"],
           "price": "3,00€"
+        },
+        {
+          "name": "Minimunkki Biscoff-täytteellä",
+          "badges": [],
+          "price": "1,00€"
+        },
+        {
+          "name": "Tuorepuuro (mustikka)",
+          "badges": ["L", "G"],
+          "price": "3,50€"
         }
       ]
     },
