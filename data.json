@@ -11,14 +11,19 @@
           "price": "2,50€"
         },
         {
-          "name": "Täytetty sämpylä (kinkku)",
+          "name": "Täytetty sämpylä (kinkku/juusto)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "3,00€"
         },
         {
           "name": "Kasvispiiras",
           "badges": ["L", "G"],
           "price": "3,00€"
+        },
+        {
+          "name": "Pizza Sandwich (vegepepperoni / kinkku)",
+          "badges": ["L"],
+          "price": "4,50€"
         }
       ]
     },
@@ -26,17 +31,12 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Vaniljamokkapala",
+          "name": "Bistron Vaniljamustikkapiirakka",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,00€"
         },
         {
-          "name": "Suklaadonitsi",
-          "badges": ["L"],
-          "price": "2,00€"
-        },
-        {
-          "name": "Voisilmäpulla",
+          "name": "Munkkirinkeli",
           "badges": ["L"],
           "price": "3,00€"
         },
