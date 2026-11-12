@@ -7,20 +7,13 @@
       "items": [
         {
           "name": "Bistron kasvispiiras",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "2,50€"
         },
         {
           "name": "Pizzaleipä (kinkku-mozzarella)",
           "badges": [],
-          "price": "4,00€"
-        },
-        {
-          "name": "Täytetty sämpylä (eilinen)",
-          "badges": [],
-          "price": "2,50€"
+          "price": "3,50€"
         }
       ]
     },
@@ -29,29 +22,23 @@
       "items": [
         {
           "name": "Bistron vaniljamustikkapiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "2,00€"
         },
         {
-          "name": "Munkkirinkeli (eilinen)",
-          "badges": [
-            "L"
-          ],
-          "price": "1,00€"
-        },
-        {
           "name": "Korvapuusti",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
+          "badges": ["L"],
+          "price": "2,00€"
         },
         {
           "name": "Suklaadonitsi",
           "badges": [],
           "price": "2,00€"
+        },
+        {
+          "name": "Pannariannos",
+          "badges": ["L"],
+          "price": "2,50€"
         }
       ]
     },
