@@ -6,14 +6,19 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Bistron kasvispiiras",
-          "badges": ["L"],
-          "price": "2,50€"
+          "name": "Pizzaleipä (portobello pekoni)",
+          "badges": [],
+          "price": "4,00€"
         },
         {
-          "name": "Pizzaleipä (kinkku-mozzarella)",
+          "name": "Pizzaleipä (kinkku-mozzarella) - eilinen",
           "badges": [],
-          "price": "3,50€"
+          "price": "3,00€"
+        },
+        {
+          "name": "Juustosämpylä - eilinen",
+          "badges": ["L"],
+          "price": "2,50€"
         }
       ]
     },
@@ -21,19 +26,19 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Bistron vaniljamustikkapiirakka",
+          "name": "Pipari-dallaspulla - eilinen",
           "badges": ["L"],
           "price": "2,00€"
         },
         {
           "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "2,00€"
+          "price": "3,00€"
         },
         {
-          "name": "Suklaadonitsi",
+          "name": "Minimunkki Biscoff-täytteellä",
           "badges": [],
-          "price": "2,00€"
+          "price": "1,00€"
         },
         {
           "name": "Pannariannos",
