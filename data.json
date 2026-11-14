@@ -6,7 +6,7 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Pizzaleipä (portobello pekoni)",
+          "name": "Pizzaleipä (portobello-pekoni)",
           "badges": [],
           "price": "4,00€"
         },
@@ -14,11 +14,6 @@
           "name": "Pizzaleipä (kinkku-mozzarella) - eilinen",
           "badges": [],
           "price": "3,00€"
-        },
-        {
-          "name": "Juustosämpylä - eilinen",
-          "badges": ["L"],
-          "price": "2,50€"
         }
       ]
     },
@@ -27,12 +22,16 @@
       "items": [
         {
           "name": "Pipari-dallaspulla - eilinen",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "2,00€"
         },
         {
           "name": "Korvapuusti",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         },
         {
@@ -42,7 +41,9 @@
         },
         {
           "name": "Pannariannos",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "2,50€"
         }
       ]
