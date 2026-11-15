@@ -11,8 +11,8 @@
           "price": "4,00€"
         },
         {
-          "name": "Pizzaleipä (kinkku-mozzarella) - eilinen",
-          "badges": [],
+          "name": "Bistron kasvispiirakka",
+          "badges": ["L"],
           "price": "3,00€"
         }
       ]
@@ -21,18 +21,9 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Pipari-dallaspulla - eilinen",
-          "badges": [
-            "L"
-          ],
+          "name": "Korvapuusti (eilinen)",
+          "badges": ["L"],
           "price": "2,00€"
-        },
-        {
-          "name": "Korvapuusti",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
         },
         {
           "name": "Minimunkki Biscoff-täytteellä",
@@ -40,11 +31,9 @@
           "price": "1,00€"
         },
         {
-          "name": "Pannariannos",
-          "badges": [
-            "L"
-          ],
-          "price": "2,50€"
+          "name": "Bistron mokkapala",
+          "badges": ["L"],
+          "price": "3,50€"
         }
       ]
     },
