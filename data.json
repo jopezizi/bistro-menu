@@ -1,14 +1,14 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Pizzaleipä (portobello-pekoni) (eilinen)",
-          "badges": [],
-          "price": "2,00€"
+          "name": "Pizzaslice (kinkku, tomaatti)",
+          "badges": ["L"],
+          "price": "2,50€"
         },
         {
           "name": "Bistron kasvispiirakka",
@@ -16,9 +16,9 @@
           "price": "3,00€"
         },
         {
-          "name": "Täytetty sämpylä",
+          "name": "Täytetty sämpylä (eilinen)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         }
       ]
     },
@@ -31,14 +31,19 @@
           "price": "3,00€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Munkkirinkilä (eilinen)",
+          "badges": ["L"],
+          "price": "1,00€"
+        },
+        {
+          "name": "Mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Bistron mokkapala",
+          "name": "Kaneliässä-keksi",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "0,20€"
         }
       ]
     },
