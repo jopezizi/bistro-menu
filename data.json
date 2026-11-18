@@ -14,11 +14,6 @@
           "name": "Bistron kasvispiirakka",
           "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Täytetty sämpylä (eilinen)",
-          "badges": ["L"],
-          "price": "2,50€"
         }
       ]
     },
@@ -28,11 +23,11 @@
         {
           "name": "Korvapuusti",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,00€"
         },
         {
-          "name": "Munkkirinkilä (eilinen)",
-          "badges": ["L"],
+          "name": "Biscoff-minimunkki",
+          "badges": [],
           "price": "1,00€"
         },
         {
