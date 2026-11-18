@@ -36,6 +36,11 @@
           "price": "3,00€"
         },
         {
+          "name": "Mokkapala",
+          "badges": ["L"],
+          "price": "3,00€"
+        },
+        {
           "name": "Kaneliässä-keksi",
           "badges": ["L"],
           "price": "0,20€"
