@@ -5,86 +5,32 @@
     {
       "name": "Suolaista",
       "items": [
-        {
-          "name": "Bistron piirakka, kinkku",
-          "badges": [
-            "L"
-          ],
-          "price": "3,50€"
-        },
-        {
-          "name": "Bistron kasvispiirakka",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
-        },
-        {
-          "name": "Kinkku-munaleipä",
-          "badges": [
-            "L"
-          ],
-          "price": "3,00€"
-        }
+        { "name": "Bistron piirakka, kinkku", "badges": ["L"], "price": "3,50€" },
+        { "name": "Bistron kasvispiirakka", "badges": ["L"], "price": "3,00€" },
+        { "name": "Calzone: kinkku", "badges": [], "price": "4,00€" }
       ]
     },
     {
       "name": "Makeaa",
       "items": [
-        {
-          "name": "Berliininmunkki",
-          "badges": [],
-          "price": "3,00€"
-        },
-        {
-          "name": "Mutakakku",
-          "badges": [
-            "L"
-          ],
-          "price": "2,50€"
-        },
-        {
-          "name": "Kaneliässä-keksi",
-          "badges": [
-            "L"
-          ],
-          "price": "0,20€"
-        }
+        { "name": "Suklaadonitsi", "badges": ["L"], "price": "3,00€" },
+        { "name": "Mutakakku", "badges": ["L"], "price": "2,50€" },
+        { "name": "Kaneliässä-keksi", "badges": ["L"], "price": "0,20€" }
       ]
     },
     {
       "name": "Kuumat juomat",
       "items": [
-        {
-          "name": "Kahvi",
-          "badges": [],
-          "price": "2,00€"
-        },
-        {
-          "name": "Tee",
-          "badges": [],
-          "price": "1,50€"
-        }
+        { "name": "Kahvi", "badges": [], "price": "2,00€" },
+        { "name": "Tee", "badges": [], "price": "1,50€" }
       ]
     },
     {
       "name": "Kylmät juomat",
       "items": [
-        {
-          "name": "Virvoitusjuomat",
-          "badges": [],
-          "price": "3,00€"
-        },
-        {
-          "name": "Vichy",
-          "badges": [],
-          "price": "2,50€"
-        },
-        {
-          "name": "Pillimehu",
-          "badges": [],
-          "price": "1,50€"
-        }
+        { "name": "Virvoitusjuomat", "badges": [], "price": "3,00€" },
+        { "name": "Vichy", "badges": [], "price": "2,50€" },
+        { "name": "Pillimehu", "badges": [], "price": "1,50€" }
       ]
     }
   ]
