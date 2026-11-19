@@ -6,13 +6,24 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Pizzaslice (kinkku, tomaatti)",
-          "badges": ["L"],
-          "price": "2,50€"
+          "name": "Bistron piirakka, kinkku",
+          "badges": [
+            "L"
+          ],
+          "price": "3,50€"
         },
         {
           "name": "Bistron kasvispiirakka",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
+          "price": "3,00€"
+        },
+        {
+          "name": "Kinkku-munaleipä",
+          "badges": [
+            "L"
+          ],
           "price": "3,00€"
         }
       ]
@@ -22,27 +33,28 @@
       "items": [
         {
           "name": "Korvapuusti",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "2,00€"
         },
         {
-          "name": "Biscoff-minimunkki",
+          "name": "Berliininmunkki",
           "badges": [],
-          "price": "1,00€"
-        },
-        {
-          "name": "Mustikkapiirakka ja vaniljakastike",
-          "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Mokkapala",
-          "badges": ["L"],
-          "price": "3,00€"
+          "name": "Mutakakku",
+          "badges": [
+            "L"
+          ],
+          "price": "2,50€"
         },
         {
           "name": "Kaneliässä-keksi",
-          "badges": ["L"],
+          "badges": [
+            "L"
+          ],
           "price": "0,20€"
         }
       ]
