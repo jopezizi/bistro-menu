@@ -1,28 +1,19 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27T12:00:00Z",
+  "updated": "2023-10-27",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Kinkkusämpylä",
-          "badges": [
-            "L"
-          ],
+          "name": "Täytetty sämpylä",
+          "badges": ["L"],
           "price": "3,50€"
         },
         {
           "name": "Bistron kasvispiirakka",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "3,00€"
-        },
-        {
-          "name": "Calzone: kinkku",
-          "badges": [],
-          "price": "4,00€"
         }
       ]
     },
@@ -30,31 +21,23 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Berliininmunkki",
-          "badges": [
-            "L"
-          ],
+          "name": "Mustikkapiirakka ja vaniljakastike",
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Suklaadonitsi",
-          "badges": [
-            "L"
-          ],
+          "name": "Munkkirinkilä",
+          "badges": ["L"],
           "price": "3,00€"
         },
         {
-          "name": "Mutakakku",
-          "badges": [
-            "L"
-          ],
-          "price": "2,50€"
+          "name": "Kamomillawiineri",
+          "badges": ["L"],
+          "price": "3,00€"
         },
         {
           "name": "Kaneliässä-keksi",
-          "badges": [
-            "L"
-          ],
+          "badges": ["L"],
           "price": "0,20€"
         }
       ]
