@@ -6,14 +6,24 @@
       "name": "Suolaista",
       "items": [
         {
-          "name": "Täytetty sämpylä",
+          "name": "Täytetty sämpylä (eilinen)",
           "badges": ["L"],
-          "price": "3,50€"
+          "price": "2,50€"
         },
         {
           "name": "Bistron kasvispiirakka",
           "badges": ["L"],
           "price": "3,00€"
+        },
+        {
+          "name": "Bistron kinkkupiirakka",
+          "badges": ["L"],
+          "price": "3,50€"
+        },
+        {
+          "name": "Täytetty ruispala",
+          "badges": ["L"],
+          "price": "3,50€"
         }
       ]
     },
@@ -23,17 +33,17 @@
         {
           "name": "Mustikkapiirakka ja vaniljakastike",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "2,50€"
         },
         {
-          "name": "Munkkirinkilä",
+          "name": "Munkkirinkilä (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "1,00€"
         },
         {
-          "name": "Kampaviineri",
+          "name": "Kampaviineri (eilinen)",
           "badges": ["L"],
-          "price": "3,00€"
+          "price": "1,00€"
         },
         {
           "name": "Kaneliässä-keksi",
