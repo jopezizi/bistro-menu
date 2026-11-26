@@ -1,24 +1,19 @@
 {
   "restaurant": "Elävä Bistro",
-  "updated": "2023-10-27",
+  "updated": "2023-10-27T12:00:00Z",
   "categories": [
     {
       "name": "Suolaista",
       "items": [
         {
-          "name": "Täytetty juustosämpylä",
+          "name": "Täytetty sämpylä (kinkku tai juusto)",
           "badges": ["L"],
           "price": "3,50€"
         },
         {
-          "name": "Bistron kinkkupiirakka (eilinen)",
+          "name": "Bistron kasvispiirakka",
           "badges": ["L"],
-          "price": "2,50€"
-        },
-        {
-          "name": "Pizzaslice (kana-paprika)",
-          "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,00€"
         }
       ]
     },
@@ -26,14 +21,14 @@
       "name": "Makeaa",
       "items": [
         {
-          "name": "Omenapiirakka",
+          "name": "Omar-munkki",
           "badges": ["L"],
-          "price": "2,50€"
+          "price": "3,50€"
         },
         {
-          "name": "Munkkirinkilä (eilinen)",
+          "name": "Munkkirinkilä",
           "badges": ["L"],
-          "price": "1,00€"
+          "price": "3,00€"
         },
         {
           "name": "Voisilmäpulla",
